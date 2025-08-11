@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+:root {
+  --main-font: 'Space Grotesk';
+  font-family: var(--main-font), system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--text-colour);
+  background-color: var(--background-colour);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* darkmode */
+:root {
+  --background-colour: rgb(11, 11, 11);
+  --text-colour: rgb(233, 221, 208);
+}
+/* lightmode */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-colour: rgb(233, 221, 208);
+    --text-colour: rgb(11, 11, 11);
+  }
+}
