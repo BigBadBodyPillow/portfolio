@@ -1,0 +1,13 @@
+.gird-background .name {
+  color: transparent;
+  background-image: var(--rainbow);
+  background-size: 400%;
+  background-clip: text;
+  color: transparent;
+
+  letter-spacing: 0.25rem;
+
+  animation: rainbow-animation 100s infinite;
+
+  user-select: none;
+}

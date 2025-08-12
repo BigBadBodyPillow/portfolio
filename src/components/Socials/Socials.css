@@ -1,0 +1,14 @@
+:root {
+  --red: 255, 0, 0;
+}
+.socials-container {
+  border: 1px solid var(--border_colour);
+  background-color: var(--background-colour_transparent);
+  backdrop-filter: blur(4px);
+}
+
+.socials-container ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

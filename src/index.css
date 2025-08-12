@@ -14,17 +14,62 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --accent_colour: #ff70cb;
+
+  --rainbow: linear-gradient(
+    to left,
+    #fef26a,
+    #fe8462,
+    #ff70cb,
+    #d270ff,
+    #743ad5,
+    #709df8,
+    #5bffbd,
+    #709df8,
+    #743ad5,
+    #d270ff,
+    #ff70cb,
+    #fe8462,
+    #fef26a
+  );
 }
 
 /* darkmode */
 :root {
   --background-colour: rgb(11, 11, 11);
+  --background-colour_transparent: rgba(11, 11, 11, 0.4);
+  --border_colour: #262626;
   --text-colour: rgb(233, 221, 208);
 }
 /* lightmode */
 @media (prefers-color-scheme: light) {
   :root {
-    --background-colour: rgb(233, 221, 208);
+    --background-colour: rgb(255, 255, 255);
+    --background-colour_transparent: rgba(255, 255, 255, 0.4);
+    --border_colour: #e4e4e7;
     --text-colour: rgb(11, 11, 11);
+  }
+}
+
+/* *::selection {
+  color: transparent;
+  background-image: var(--rainbow);
+  background-size: 400%;
+  background-clip: unset;
+  color: black;
+} */
+
+*::selection {
+  color: var(--background-colour);
+  background-color: var(--accent_colour);
+}
+
+@keyframes rainbow-animation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
   }
 }

@@ -1,0 +1,11 @@
+.grid-lines {
+  background-image: linear-gradient(to right, #e4e4e7 1px, transparent 1px),
+    linear-gradient(to bottom, #e4e4e7 1px, transparent 1px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .grid-lines {
+    background-image: linear-gradient(to right, #262626 1px, transparent 1px),
+      linear-gradient(to bottom, #262626 1px, transparent 1px);
+  }
+}
