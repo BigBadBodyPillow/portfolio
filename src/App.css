@@ -9,5 +9,5 @@
 
   animation: rainbow-animation 100s infinite;
 
-  user-select: none;
+  /* user-select: none; */
 }

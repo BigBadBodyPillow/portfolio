@@ -15,7 +15,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --accent_colour: #ff70cb;
+  --accent-colour: #ff70cb;
 
   --rainbow: linear-gradient(
     to left,
@@ -59,7 +59,9 @@
   background-clip: unset;
   color: black;
 } */
-
+* {
+  box-sizing: border-box !important;
+}
 *::selection {
   color: var(--background-colour);
   background-color: var(--accent_colour);

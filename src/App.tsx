@@ -17,7 +17,7 @@ function App() {
       <main>
         <GridBackground>
           <div className="flex flex-col z-20 text-center">
-            <p className="name relative  bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text  font-bold text-transparent  text-6xl sm:text-9xl ">
+            <p className="name select-none relative  bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-4 font-bold text-transparent  text-6xl sm:text-9xl ">
               .sadness
             </p>
             {/* <p className="pb-2 tracking-widest z-20">
