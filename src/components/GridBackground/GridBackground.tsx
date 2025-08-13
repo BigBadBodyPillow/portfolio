@@ -6,7 +6,7 @@ import './GridBackground.css';
 // https://ui.aceternity.com/components/grid-and-dot-backgrounds
 export function GridBackground({ children }: { children?: React.ReactNode }) {
   return (
-    <div className="gird-background relative flex h-[50rem] w-full items-center justify-center dark:bg-black bg-[#f4f4f4] ">
+    <div className="gird-background relative flex h-full w-full items-center justify-center dark:bg-black bg-[#f4f4f4] ">
       <div
         className={'grid-lines absolute inset-0 [background-size:40px_40px]'}
       />

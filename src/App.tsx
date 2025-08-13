@@ -7,6 +7,7 @@ import './App.css';
 import RainbowLine from './components/RainbowLine/RainbowLine.tsx';
 import { GridBackground } from './components/GridBackground/GridBackground.tsx';
 import { Socials } from './components/Socials/Socials.tsx';
+import { BackgroundBlur } from './components/BackgroundBlur/BackgroundBlur.tsx';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,17 +16,20 @@ function App() {
     <>
       <RainbowLine />
       <main>
-        <GridBackground>
-          <div className="flex flex-col z-20 text-center">
-            <p className="name select-none relative  bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-4 font-bold text-transparent  text-6xl sm:text-9xl ">
-              .sadness
-            </p>
-            {/* <p className="pb-2 tracking-widest z-20">
-              - Welcome to my portfolio -
-            </p> */}
-            <Socials />
-          </div>
-        </GridBackground>
+        <div className="hero min-h-[600px] h-[80vh]">
+          <GridBackground>
+            <div className="flex flex-col z-20 text-center">
+              <BackgroundBlur />
+              <h1 className="name select-none relative bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text  text-transparent ">
+                .sadness
+              </h1>
+              {/* <h2 className="pb-2 tracking-widest z-20">
+                - Welcome to my portfolio -
+              </h2> */}
+              <Socials />
+            </div>
+          </GridBackground>
+        </div>
         <div>
           <a href="https://vite.dev" target="_blank">
             <img src={viteLogo} className="logo" alt="Vite logo" />

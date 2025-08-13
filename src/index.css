@@ -64,7 +64,7 @@
 }
 *::selection {
   color: var(--background-colour);
-  background-color: var(--accent_colour);
+  background-color: var(--accent-colour);
 }
 
 @keyframes rainbow-animation {

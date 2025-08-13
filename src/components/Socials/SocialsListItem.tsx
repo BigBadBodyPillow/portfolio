@@ -6,9 +6,9 @@ type SocialsListItemProp = {
 export function SocialsListItem({ url, Icon }: SocialsListItemProp) {
   return (
     <>
-      <li className="aspect-square">
+      <li className="aspect-square flex items-center justify-center ">
         <a href={url} target="_blank">
-          <Icon className="w-10 h-10 sm:w-15 sm:h-15" />
+          <Icon className="" />
         </a>
       </li>
     </>

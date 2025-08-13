@@ -1,13 +1,36 @@
 .gird-background .name {
+  font-size: 10rem;
   color: transparent;
   background-image: var(--rainbow);
   background-size: 400%;
   background-clip: text;
   color: transparent;
 
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.35rem;
 
   animation: rainbow-animation 100s infinite;
 
   /* user-select: none; */
+}
+
+/* name */
+@media (max-width: 750px) {
+  .gird-background .name {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 630px) {
+  .gird-background .name {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 480px) {
+  .gird-background .name {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 400px) {
+  .gird-background .name {
+    font-size: 4rem;
+  }
 }
