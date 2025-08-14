@@ -3,8 +3,12 @@
 //css
 import './GridBackground.css';
 
+interface GridBackgroundProps {
+  children?: React.ReactNode;
+}
+
 // https://ui.aceternity.com/components/grid-and-dot-backgrounds
-export function GridBackground({ children }: { children?: React.ReactNode }) {
+export function GridBackground({ children }: GridBackgroundProps) {
   return (
     <div className="gird-background relative flex h-full w-full items-center justify-center dark:bg-black bg-[#f4f4f4] ">
       <div

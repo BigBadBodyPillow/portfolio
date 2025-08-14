@@ -1,0 +1,77 @@
+.folder-section {
+  margin-bottom: 0;
+  position: relative;
+  background: transparent;
+  display: inline-block;
+}
+
+.folder-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border: 2px solid var(--border-colour);
+  border-bottom: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 4px;
+  min-width: 120px;
+}
+
+.folder-tab:last-of-type {
+  margin-right: 0;
+}
+
+.folder-tab:not(.active) {
+  line-height: 1.2rem;
+}
+
+.folder-tab.active {
+  background: var(--accent-colour);
+  border-color: var(--accent-colour);
+}
+
+.folder-tab.active .tab-label,
+.folder-tab.active .tab-arrow {
+  color: black;
+}
+
+@media (prefers-color-scheme: light) {
+  .folder-tab.active .tab-label,
+  .folder-tab.active .tab-arrow {
+    color: white;
+  }
+}
+
+.tab-label {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.tab-arrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+  margin-left: 8px;
+}
+
+.tab-arrow.open {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .folder-tab {
+    padding: 10px 16px;
+    min-width: 100px;
+  }
+
+  .tab-label {
+    font-size: 1rem;
+  }
+
+  .content-inner {
+    padding: 16px;
+  }
+}

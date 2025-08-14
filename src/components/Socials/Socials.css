@@ -13,6 +13,11 @@ svg {
   fill: black;
   /* fill: var(--text-colour); */
 }
+@media (prefers-color-scheme: light) {
+  svg {
+    fill: white;
+  }
+}
 svg:hover {
   fill: var(--accent-colour);
   filter: drop-shadow(0 0 4px var(--accent-colour));

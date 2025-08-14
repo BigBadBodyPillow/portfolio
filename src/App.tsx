@@ -1,6 +1,3 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
 
 //components
@@ -8,49 +5,49 @@ import RainbowLine from './components/RainbowLine/RainbowLine.tsx';
 import { GridBackground } from './components/GridBackground/GridBackground.tsx';
 import { Socials } from './components/Socials/Socials.tsx';
 import { BackgroundBlur } from './components/BackgroundBlur/BackgroundBlur.tsx';
+import { Folder, FolderSection } from './components/Folder/Folder.tsx';
+import { About } from './components/Folder/Sections/About.tsx';
+import { Projects } from './components/Folder/Sections/Projects.tsx';
+import { Other } from './components/Folder/Sections/Other.tsx';
+import { EmailFooter } from './components/EmailFooter/EmailFooter.tsx';
+
+// stuff todo later
+// features
+//
+// fix
+// shadow on cat not work
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <RainbowLine />
-      <main>
-        <div className="hero min-h-[600px] h-[80vh]">
-          <GridBackground>
-            <div className="flex flex-col z-20 text-center">
-              <BackgroundBlur />
-              <h1 className="name select-none relative bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text  text-transparent ">
-                .sadness
-              </h1>
-              {/* <h2 className="pb-2 tracking-widest z-20">
-                - Welcome to my portfolio -
-              </h2> */}
-              <Socials />
-            </div>
-          </GridBackground>
-        </div>
-        <div>
-          <a href="https://vite.dev" target="_blank">
-            <img src={viteLogo} className="logo" alt="Vite logo" />
-          </a>
-          <a href="https://react.dev" target="_blank">
-            <img src={reactLogo} className="logo react" alt="React logo" />
-          </a>
-        </div>
-        <h1>Vite + React</h1>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test HMR
-          </p>
-        </div>
-        <p className="read-the-docs">
-          Click on the Vite and React logos to learn more
-        </p>
+      <div className="hero min-h-[600px] h-[80vh] overflow-y-clip">
+        <GridBackground>
+          <div className="flex flex-col z-20 text-center ">
+            <BackgroundBlur />
+            <h1 className="name  relative bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text  my-6 text-transparent rounded-xl  px-2">
+              Shiv Jagath
+            </h1>
+            <Socials />
+          </div>
+        </GridBackground>
+      </div>
+      <main className="flex justify-center  bg-stone-100 dark:bg-[var(--background-colour)]">
+        <Folder>
+          <FolderSection title="About">
+            <About />
+          </FolderSection>
+
+          <FolderSection title="Projects">
+            <Projects />
+          </FolderSection>
+
+          <FolderSection title="Other">
+            <Other />
+          </FolderSection>
+        </Folder>
       </main>
+      <EmailFooter />
     </>
   );
 }

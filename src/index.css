@@ -39,7 +39,7 @@
 :root {
   --background-colour: rgb(11, 11, 11);
   --background-colour_transparent: rgba(11, 11, 11, 0.4);
-  --border_colour: #262626;
+  --border-colour: #262626;
   --text-colour: rgb(233, 221, 208);
 }
 /* lightmode */
@@ -47,7 +47,7 @@
   :root {
     --background-colour: rgb(255, 255, 255);
     --background-colour_transparent: rgba(255, 255, 255, 0.4);
-    --border_colour: #e4e4e7;
+    --border-colour: #e4e4e7;
     --text-colour: rgb(11, 11, 11);
   }
 }
@@ -65,6 +65,9 @@
 *::selection {
   color: var(--background-colour);
   background-color: var(--accent-colour);
+}
+body {
+  min-width: 358px !important;
 }
 
 @keyframes rainbow-animation {

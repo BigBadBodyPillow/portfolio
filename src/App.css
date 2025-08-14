@@ -1,4 +1,6 @@
 .gird-background .name {
+  /* font-family: 'Roboto mono'; */
+  font-family: 'Qwitcher Grypen';
   font-size: 10rem;
   color: transparent;
   background-image: var(--rainbow);
@@ -6,12 +8,28 @@
   background-clip: text;
   color: transparent;
 
+  /* bottom of the g gets cut off if lower */
+  line-height: 1.1;
   letter-spacing: 0.35rem;
 
   animation: rainbow-animation 100s infinite;
-
-  /* user-select: none; */
 }
+
+.gird-background .name:not(:hover)::selection {
+  background-color: transparent;
+  color: transparent;
+}
+.gird-background .name::selection {
+  background-color: transparent;
+}
+.gird-background .name:hover {
+  background-clip: unset;
+  color: var(--background-colour);
+}
+/* .hero {
+  max-width: 100%;
+  overflow-y: hidden;
+} */
 
 /* name */
 @media (max-width: 750px) {

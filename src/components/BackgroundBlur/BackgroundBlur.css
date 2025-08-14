@@ -10,4 +10,46 @@
     transparent
   );
   filter: blur(90px);
+
+  width: 100%;
+  max-width: 600px;
+  overflow-y: hidden;
+}
+
+/* make brighter colours more visible (not the purples/blues) */
+@media (prefers-color-scheme: light) {
+  .backthing {
+    background-image: radial-gradient(
+      rgba(254, 242, 106, 0.4),
+      rgba(254, 132, 98, 0.4),
+      rgba(255, 112, 203, 0.4),
+      rgba(210, 112, 255, 0.2),
+      rgba(116, 58, 213, 0.2),
+      rgba(112, 157, 248, 0.2),
+      rgba(91, 255, 189, 0.4),
+      transparent
+    );
+  }
+}
+
+@media (max-width: 750px) {
+  .backthing {
+    max-width: 500px;
+    /* width: 50%; */
+  }
+}
+@media (max-width: 630px) {
+  .backthing {
+    max-width: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .backthing {
+    max-width: 345px;
+  }
+}
+@media (max-width: 400px) {
+  .backthing {
+    max-width: 300px;
+  }
 }

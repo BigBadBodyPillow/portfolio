@@ -1,0 +1,52 @@
+.folder-collapsible-container {
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  margin-block: 20px;
+}
+
+/*  tabs  */
+.folder-tabs-container {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0;
+  position: relative;
+  gap: 2px;
+}
+
+/* Content area that appears below the tabs */
+.folder-content-area {
+  border: 2px solid var(--border-colour);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  min-height: 500px;
+  position: relative;
+}
+
+@media (max-width: 1500px) {
+  .folder-collapsible-container {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .folder-collapsible-container {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .folder-collapsible-container {
+    padding: 16px;
+    padding-top: 0;
+  }
+
+  .folder-tabs-container {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 375px) {
+  .folder-tabs-container {
+    justify-content: space-between;
+  }
+}
