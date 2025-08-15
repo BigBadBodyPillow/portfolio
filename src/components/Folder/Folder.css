@@ -2,7 +2,8 @@
   width: 100%;
   max-width: 1000px;
   position: relative;
-  margin-block: 20px;
+  /* margin-bottom: 20px; */
+  top: -3.1rem;
 }
 
 /*  tabs  */
@@ -17,9 +18,9 @@
 /* Content area that appears below the tabs */
 .folder-content-area {
   border: 2px solid var(--border-colour);
-  border-top: none;
-  border-radius: 0 0 8px 8px;
-  min-height: 500px;
+  /* border-top: none; */
+  border-radius: 0 8px 8px 8px;
+  min-height: 700px;
   position: relative;
 }
 

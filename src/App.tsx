@@ -15,7 +15,8 @@ import { EmailFooter } from './components/EmailFooter/EmailFooter.tsx';
 // features
 //
 // fix
-// shadow on cat not work
+// 1. shadow on cat not work
+// 2. filing cabinate section thing shifts/moves when nothing is active
 
 function App() {
   return (
@@ -34,12 +35,12 @@ function App() {
       </div>
       <main className="flex justify-center  bg-stone-100 dark:bg-[var(--background-colour)]">
         <Folder>
-          <FolderSection title="About">
-            <About />
-          </FolderSection>
-
           <FolderSection title="Projects">
             <Projects />
+          </FolderSection>
+
+          <FolderSection title="About">
+            <About />
           </FolderSection>
 
           <FolderSection title="Other">
