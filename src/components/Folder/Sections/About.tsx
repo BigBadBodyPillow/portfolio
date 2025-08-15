@@ -1,16 +1,22 @@
+// image
+import scrajj from '/src/assets/scrajj.avif';
+
 export function About() {
   return (
     <>
-      <p>
-        Hi! I'm Shiv Jagath, a passionate developer who loves creating amazing
-        digital experiences. I enjoy working with modern technologies and
-        building things that make a difference.
-      </p>
-      <p>
-        When I'm not coding, you can find me exploring new technologies,
-        contributing to open source, or sharing knowledge with the developer
-        community.
-      </p>
+      <div className="about-content flex flex-col">
+        <h2 className="text-4xl font-bold mb-4 pl-2">About</h2>
+        <p className="font-[Roboto_mono]">Hi! I'm Shiv.</p>
+        <p className="font-[Roboto_mono]">
+          Idk what to add here. I don't usually have a lot to say about
+          anything. I like Dota, and PoE and uhh the colour red.
+          <img
+            src={scrajj}
+            alt="Scrajj"
+            className="inline-block w-[32px] ml-1 relative -top-1"
+          />
+        </p>
+      </div>
     </>
   );
 }

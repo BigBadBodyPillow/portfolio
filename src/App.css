@@ -26,8 +26,15 @@
   background-clip: unset;
   color: var(--background-colour);
 }
-main {
+/* main {
   background-color: black;
+} */
+.text-container {
+  width: 100%;
+  min-width: 340px;
+  max-width: 1000px;
+  margin-inline: 10%;
+  padding: 2rem;
 }
 @media (prefers-color-scheme: light) {
   main {
@@ -40,19 +47,31 @@ main {
   .gird-background .name {
     font-size: 8rem;
   }
+  .text-container {
+    padding: 1.8rem;
+  }
 }
 @media (max-width: 630px) {
   .gird-background .name {
     font-size: 6rem;
+  }
+  .text-container {
+    padding: 1.5rem;
   }
 }
 @media (max-width: 480px) {
   .gird-background .name {
     font-size: 5rem;
   }
+  .text-container {
+    padding: 1rem;
+  }
 }
 @media (max-width: 400px) {
   .gird-background .name {
     font-size: 4rem;
+  }
+  .text-container {
+    padding: 0.8rem;
   }
 }

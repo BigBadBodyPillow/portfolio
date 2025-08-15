@@ -38,4 +38,7 @@ svg:hover {
   .socials-container ul li {
     height: 2.5rem;
   }
+  .socials-container {
+    padding: 0;
+  }
 }
