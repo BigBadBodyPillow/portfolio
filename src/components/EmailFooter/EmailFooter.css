@@ -9,6 +9,15 @@ footer h1 {
   animation: rainbow-animation 100s infinite;
 }
 
+/* Disable animation when reduced motion is preferred */
+@media (prefers-reduced-motion: reduce) {
+  footer h1 {
+    animation: none;
+    /* background-image: var(--accent-colour);
+    background-clip: text; */
+  }
+}
+
 @media (max-width: 2084px) {
   footer h1 {
     font-size: 9rem;

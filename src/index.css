@@ -41,6 +41,7 @@
   --background-colour_transparent: rgba(11, 11, 11, 0.4);
   --border-colour: #262626;
   --text-colour: rgb(233, 221, 208);
+  --text-colour-main: rgb(196, 182, 167);
 }
 /* lightmode */
 @media (prefers-color-scheme: light) {
@@ -49,6 +50,7 @@
     --background-colour_transparent: rgba(255, 255, 255, 0.4);
     --border-colour: #e4e4e7;
     --text-colour: rgb(11, 11, 11);
+    --text-colour-main: rgb(31, 31, 31);
   }
 }
 
@@ -66,6 +68,11 @@
   color: var(--background-colour);
   background-color: var(--accent-colour);
 }
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   min-width: 358px !important;
 }

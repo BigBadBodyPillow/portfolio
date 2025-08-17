@@ -15,6 +15,15 @@
   animation: rainbow-animation 100s infinite;
 }
 
+/* Disable animation when reduced motion is preferred */
+@media (prefers-reduced-motion: reduce) {
+  .gird-background .name {
+    animation: none;
+    /* background-image: var(--accent-colour);
+    background-clip: text; */
+  }
+}
+
 .gird-background .name:not(:hover)::selection {
   background-color: transparent;
   color: transparent;

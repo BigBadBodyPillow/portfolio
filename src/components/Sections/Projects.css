@@ -1,0 +1,98 @@
+.project {
+  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  --stripe1-colour: rgb(15, 15, 15);
+  --stripe2-colour: rgb(20, 20, 20);
+  background: repeating-linear-gradient(
+    135deg,
+    var(--stripe1-colour),
+    var(--stripe1-colour) 10px,
+    var(--stripe2-colour) 10px,
+    var(--stripe2-colour) 20px
+  );
+}
+
+@media (prefers-color-scheme: light) {
+  .project {
+    /* 255 -15 */
+    --stripe1-colour: rgb(240, 240, 240);
+    /* 255 - 20 */
+    --stripe2-colour: rgb(235, 235, 235);
+  }
+}
+
+.project:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.project img {
+  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
+}
+
+.project:hover img {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.project:hover a,
+.project:hover p {
+  transform: scale(1.02);
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.project a {
+  display: inline-block;
+}
+.project p {
+  color: var(--text-colour-main);
+}
+
+/* .project a,
+.project p {
+  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
+} */
+.project a:hover {
+  color: var(--accent-colour);
+}
+
+/* .project[data-tilt] {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.project[data-tilt] img {
+  transform: translateZ(20px);
+}
+
+.project[data-tilt] a {
+  transform: translateZ(15px);
+}
+
+.project[data-tilt] p {
+  transform: translateZ(10px);
+} */
+
+@media (prefers-reduced-motion: reduce) {
+  .project:hover {
+    box-shadow: none;
+  }
+  /* .project[data-tilt] {
+    transform-style: flat;
+    transform: none;
+  }
+
+  .project[data-tilt] img,
+  .project[data-tilt] a,
+  .project[data-tilt] p {
+    transform: none;
+  } */
+  .project:hover img,
+  .project:hover a,
+  .project:hover p {
+    box-shadow: none;
+    transform: none;
+    text-shadow: none;
+  }
+}

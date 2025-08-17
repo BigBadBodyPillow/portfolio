@@ -6,8 +6,8 @@ import { GridBackground } from './components/GridBackground/GridBackground.tsx';
 import { Socials } from './components/Socials/Socials.tsx';
 import { BackgroundBlur } from './components/BackgroundBlur/BackgroundBlur.tsx';
 // import { Folder, FolderSection } from './components/Folder/Folder.tsx';
-import { About } from './components/Folder/Sections/About.tsx';
-import { Projects } from './components/Folder/Sections/Projects.tsx';
+import { About } from './components/Sections/About.tsx';
+import { Projects } from './components/Sections/Projects.tsx';
 // import { Other } from './components/Folder/Sections/Other.tsx';
 import { EmailFooter } from './components/EmailFooter/EmailFooter.tsx';
 
@@ -40,22 +40,6 @@ function App() {
         <div className="projects-container text-container  ">
           <Projects />
         </div>
-        {/* <div className="Other-container text-container  ">
-          <Other />
-        </div> */}
-        {/* <Folder>
-          <FolderSection title="Projects">
-            <Projects />
-          </FolderSection>
-
-          <FolderSection title="About">
-            <About />
-          </FolderSection>
-
-          <FolderSection title="Other">
-            <Other />
-          </FolderSection>
-        </Folder> */}
       </main>
       <EmailFooter />
     </>

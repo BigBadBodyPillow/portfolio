@@ -9,3 +9,10 @@
   background-size: 400%;
   animation: rainbow-animation 100s infinite;
 }
+
+/* Disable animation when reduced motion is preferred */
+@media (prefers-reduced-motion: reduce) {
+  .rainbow-line {
+    animation: none;
+  }
+}
