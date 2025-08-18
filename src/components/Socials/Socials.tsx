@@ -2,10 +2,10 @@
 import { SocialsListItem } from './SocialsListItem.tsx';
 import { SocialsMiddle } from './SocialsMiddle.tsx';
 //svg
-import { GitHub } from '../../assets/GitHub.tsx';
-import { Discord } from '../../assets/Discord.tsx';
-import { Youtube } from '../../assets/Youtube.tsx';
-import { YoutubeMusic } from '../../assets/YoutubeMusic.tsx';
+import { GitHub } from '../../assets/social-images/GitHub.tsx';
+import { Discord } from '../../assets/social-images/Discord.tsx';
+import { Youtube } from '../../assets/social-images/Youtube.tsx';
+import { YoutubeMusic } from '../../assets/social-images/YoutubeMusic.tsx';
 
 //css
 import './Socials.css';

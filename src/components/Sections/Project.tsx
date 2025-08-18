@@ -79,7 +79,7 @@ export function Project({
   return (
     <div
       ref={cardRef}
-      className="project p-2 pb-4 border border-[var(--border-colour)] rounded-lg"
+      className="project p-2 pb-4 border border-[var(--border-colour)] rounded-lg cursor-grab"
       data-reduced-motion={prefersReducedMotion}
     >
       <picture>
