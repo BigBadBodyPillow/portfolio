@@ -5,7 +5,7 @@ import './Projects.css';
 
 // webp
 import portfolio from '../../assets/project-images/reduced/Portfolio.webp';
-import portfolio_light from '../../assets/project-images/reduced/PortfolioLight.webp';
+import portfolioLight from '../../assets/project-images/reduced/PortfolioLight.webp';
 import iTunesMediaCatalogue from '../../assets/project-images/reduced/iTunesMediaCatalogue.webp';
 import maintenanceManager from '../../assets/project-images/reduced/MaintenanceManager.webp';
 import todo from '../../assets/project-images/reduced/ToDo.webp';
@@ -20,7 +20,7 @@ export function Projects() {
           {/* Portfolio */}
           <Project
             image={portfolio}
-            lightImage={portfolio_light}
+            lightImage={portfolioLight}
             title="Portfolio"
             link="https://github.com/BigBadBodyPillow/portfolio"
             description="Portfolio description"
