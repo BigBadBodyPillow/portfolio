@@ -18,11 +18,24 @@ export function Socials() {
           <SocialsListItem
             Icon={GitHub}
             url="https://github.com/BigBadBodyPillow"
+            aria-label="Github logo"
           />
-          <SocialsListItem Icon={Youtube} url="" />
+          <SocialsListItem
+            Icon={Youtube}
+            url="https://www.youtube.com/@bigbadbodypillow"
+            aria-label="Youtube logo"
+          />
           <SocialsMiddle />
-          <SocialsListItem Icon={Discord} url="" />
-          <SocialsListItem Icon={YoutubeMusic} url="" />
+          <SocialsListItem
+            Icon={Discord}
+            url="https://discordapp.com/users/244425759739871233"
+            aria-label="Discord logo"
+          />
+          <SocialsListItem
+            Icon={YoutubeMusic}
+            url="https://music.youtube.com/playlist?list=PLMTaN3qBEkVBBma9ZXkvglASpSuLbilEg"
+            aria-label="Youtube Music logo"
+          />
         </ul>
       </div>
     </>

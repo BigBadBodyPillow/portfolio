@@ -18,6 +18,11 @@ export function Project({
   const cardRef = useRef<HTMLDivElement>(null);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
+  // distance on z axis for elements
+  const titleHeight = 10;
+  const paragraphHeight = 7;
+
+  // check for reduced motion status
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     setPrefersReducedMotion(mediaQuery.matches);
@@ -32,6 +37,7 @@ export function Project({
 
   useEffect(() => {
     const card = cardRef.current;
+    // stop if user has prefers reduced motion
     if (!card || prefersReducedMotion) return;
 
     const handleMouseMove = (e: MouseEvent) => {
@@ -50,9 +56,10 @@ export function Project({
       `;
 
       // Add parallax effect to inner elements
-      const elements = card.querySelectorAll('img, a, p');
+      const elements = card.querySelectorAll('a, p');
+
       elements.forEach((element, index) => {
-        const zHeight = [20, 10, 7][index] || 0;
+        const zHeight = [titleHeight, paragraphHeight][index] || 0;
         (element as HTMLElement).style.transform = `translateZ(${zHeight}px)`;
       });
     };
@@ -61,9 +68,10 @@ export function Project({
       card.style.transform =
         'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0)';
 
-      const elements = card.querySelectorAll('img, a, p');
-      elements.forEach((el) => {
-        (el as HTMLElement).style.transform = '';
+      const elements = card.querySelectorAll('a, p');
+
+      elements.forEach((element) => {
+        (element as HTMLElement).style.transform = '';
       });
     };
 

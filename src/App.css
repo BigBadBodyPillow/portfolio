@@ -24,17 +24,17 @@
   }
 }
 
-.gird-background .name:not(:hover)::selection {
+/* .gird-background .name:not(:hover)::selection {
   background-color: transparent;
   color: transparent;
-}
-.gird-background .name::selection {
+} */
+/* .gird-background .name::selection {
   background-color: transparent;
-}
-.gird-background .name:hover {
+} */
+/* .gird-background .name:hover {
   background-clip: unset;
   color: var(--background-colour);
-}
+} */
 /* main {
   background-color: black;
 } */

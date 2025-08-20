@@ -19,8 +19,6 @@ import { EmailFooter } from './components/EmailFooter/EmailFooter.tsx';
 //
 // fix
 // 1. shadow on cat not work
-// 2. filing cabinate section thing shifts/moves when nothing is active
-// 3. in socials each image is in its own li. move li out of component
 
 function App() {
   return (
@@ -38,18 +36,9 @@ function App() {
         </GridBackground>
       </div>
       <main className="flex flex-col justify-center items-center bg-stone-100 dark:bg-[var(--background-colour)] py-5 md:py-2 ">
-        {/* about */}
-        <div className="about-container text-container  ">
-          <About />
-        </div>
-        {/* projects */}
-        <div className="projects-container text-container  ">
-          <Projects />
-        </div>
-        {/* skills */}
-        <div className="skils-container text-container  ">
-          <Skills />
-        </div>
+        <About />
+        <Projects />
+        <Skills />
       </main>
       <EmailFooter />
     </>

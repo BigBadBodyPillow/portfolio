@@ -16,6 +16,7 @@ export function SocialsMiddle() {
       <li
         className="cat-container aspect-square cursor-pointer select-none flex items-center justify-center"
         onClick={handleMiddleSize}
+        aria-label="interactive cat that has no purpose other than to just be clicked"
       >
         {middleSize === 'big' ? <BigCat /> : <SmallCat />}
       </li>

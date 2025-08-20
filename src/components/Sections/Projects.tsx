@@ -14,7 +14,7 @@ import eventManager from '../../assets/project-images/reduced/EventManager.webp'
 export function Projects() {
   return (
     <>
-      <div className="projects-content ">
+      <div className="projects-content  text-container">
         <h2 className="text-4xl font-bold mb-4 pl-1">Projects</h2>
         <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
           {/* Portfolio */}
@@ -61,7 +61,10 @@ export function Projects() {
           {/* more */}
           <div className="border border-[var(--border-colour)] rounded-lg flex justify-center items-center  bg-[rgb(235,235,235)] dark:bg-[rgb(20,20,20)] select-none cursor-not-allowed min-h-[200px] z-1">
             <h3 className="dark:text-[rgb(91,91,91)] text-[#858585] ">
-              more...
+              more
+              <span className="dots">.</span>
+              <span className="dots">.</span>
+              <span className="dots">.</span>
             </h3>
           </div>
         </div>

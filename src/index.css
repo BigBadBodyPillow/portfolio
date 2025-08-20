@@ -15,8 +15,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --accent-colour: #ff70cb;
-
   --rainbow: linear-gradient(
     to left,
     #fef26a,
@@ -35,13 +33,13 @@
   );
 }
 
-/* darkmode */
 :root {
   --background-colour: rgb(11, 11, 11);
   --background-colour_transparent: rgba(11, 11, 11, 0.4);
   --border-colour: #262626;
   --text-colour: rgb(233, 221, 208);
   --text-colour-main: rgb(196, 182, 167);
+  --accent-colour: #ff70cb;
 }
 /* lightmode */
 @media (prefers-color-scheme: light) {
@@ -54,13 +52,6 @@
   }
 }
 
-/* *::selection {
-  color: transparent;
-  background-image: var(--rainbow);
-  background-size: 400%;
-  background-clip: unset;
-  color: black;
-} */
 * {
   box-sizing: border-box !important;
 }

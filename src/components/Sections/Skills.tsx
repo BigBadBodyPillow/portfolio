@@ -20,9 +20,9 @@ import './skills.css';
 export function Skills() {
   return (
     <>
-      <div className="skills-content flex flex-col">
+      <div className="skills-content flex flex-col text-container">
         <h2 className="text-4xl font-bold mb-4 pl-1">Skills</h2>
-        <div className="skills-grid-container font-[Roboto_mono] text-[var(--text-colour)] ">
+        <div className="skills-grid-container font-[Roboto_mono] text-[var(--text-colour-main)] ">
           <Skill
             Icon={Html}
             text="Html"

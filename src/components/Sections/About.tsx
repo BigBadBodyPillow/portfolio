@@ -4,7 +4,7 @@ import scrajj from '/src/assets/scrajj.avif';
 export function About() {
   return (
     <>
-      <div className="about-content flex flex-col">
+      <div className="about-content flex flex-col text-container">
         <h2 className="text-4xl font-bold mb-4 pl-1">About</h2>
         <p className="font-[Roboto_mono] text-[var(--text-colour-main)]">
           Hi! I'm Shiv.
