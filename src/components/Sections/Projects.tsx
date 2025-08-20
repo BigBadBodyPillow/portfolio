@@ -4,10 +4,10 @@ import { Project } from './Project.tsx';
 import './Projects.css';
 
 // webp
-import portfolio from '../../assets/project-images/reduced/portfolio.webp';
-import portfolio_light from '../../assets/project-images/reduced/portfolioLight.webp';
+import portfolio from '../../assets/project-images/reduced/Portfolio.webp';
+import portfolio_light from '../../assets/project-images/reduced/PortfolioLight.webp';
 import iTunesMediaCatalogue from '../../assets/project-images/reduced/iTunesMediaCatalogue.webp';
-import maintenanceManager from '../../assets/project-images/reduced/maintenanceManager.webp';
+import maintenanceManager from '../../assets/project-images/reduced/MaintenanceManager.webp';
 import todo from '../../assets/project-images/reduced/ToDo.webp';
 import eventManager from '../../assets/project-images/reduced/EventManager.webp';
 
