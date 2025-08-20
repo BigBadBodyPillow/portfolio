@@ -5,7 +5,7 @@ import './Projects.css';
 
 // webp
 import portfolio from '../../assets/project-images/reduced/Portfolio.webp';
-import portfolio_light from '../../assets/project-images/reduced/Portfolio_light.webp';
+import portfolio_light from '../../assets/project-images/reduced/PortfolioLight.webp';
 import iTunesMediaCatalogue from '../../assets/project-images/reduced/iTunesMediaCatalogue.webp';
 import maintenanceManager from '../../assets/project-images/reduced/MaintenanceManager.webp';
 import todo from '../../assets/project-images/reduced/ToDo.webp';
