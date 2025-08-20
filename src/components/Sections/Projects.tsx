@@ -5,12 +5,19 @@ import './Projects.css';
 
 // webp
 // import Portfolio from '../../assets/project-images/reduced/Portfolio.webp';
-import Portfolio from './../../assets/project-images/reduced/Portfolio.webp';
 // import PortfolioLight from '../../assets/project-images/reduced/PortfolioLight.webp';
-import iTunesMediaCatalogue from './../../assets/project-images/reduced/iTunesMediaCatalogue.webp';
-import MaintenanceManager from './../../assets/project-images/reduced/MaintenanceManager.webp';
-import ToDo from './../../assets/project-images/reduced/ToDo.webp';
-import EventManager from './../../assets/project-images/reduced/EventManager.webp';
+// import iTunesMediaCatalogue from '../../assets/project-images/reduced/iTunesMediaCatalogue.webp';
+// import MaintenanceManager from '../../assets/project-images/reduced/MaintenanceManager.webp';
+// import ToDo from '../../assets/project-images/reduced/ToDo.webp';
+// import EventManager from '../../assets/project-images/reduced/EventManager.webp';
+
+//public images
+import Portfolio from '/project-images/Portfolio.webp';
+import PortfolioLight from '/project-images/PortfolioLight.webp';
+import iTunesMediaCatalogue from '/project-images/iTunesMediaCatalogue.webp';
+import MaintenanceManager from '/project-images/MaintenanceManager.webp';
+import ToDo from '/project-images/ToDo.webp';
+import EventManager from '/project-images/EventManager.webp';
 
 export function Projects() {
   return (
@@ -21,8 +28,7 @@ export function Projects() {
           {/* Portfolio */}
           <Project
             image={Portfolio}
-            // lightImage={portfolioLight}
-            lightImage=""
+            lightImage={PortfolioLight}
             title="Portfolio"
             link="https://github.com/BigBadBodyPillow/portfolio"
             description="Portfolio description"
