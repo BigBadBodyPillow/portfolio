@@ -4,12 +4,12 @@ import { Project } from './Project.tsx';
 import './Projects.css';
 
 // webp
-import portfolio from '../../assets/project-images/reduced/Portfolio.webp';
-// import portfolioLight from '../../assets/project-images/reduced/PortfolioLight.webp';
+import Portfolio from '../../assets/project-images/reduced/Portfolio.webp';
+// import PortfolioLight from '../../assets/project-images/reduced/PortfolioLight.webp';
 import iTunesMediaCatalogue from '../../assets/project-images/reduced/iTunesMediaCatalogue.webp';
-import maintenanceManager from '../../assets/project-images/reduced/MaintenanceManager.webp';
-import todo from '../../assets/project-images/reduced/ToDo.webp';
-import eventManager from '../../assets/project-images/reduced/EventManager.webp';
+import MaintenanceManager from '../../assets/project-images/reduced/MaintenanceManager.webp';
+import ToDo from '../../assets/project-images/reduced/ToDo.webp';
+import EventManager from '../../assets/project-images/reduced/EventManager.webp';
 
 export function Projects() {
   return (
@@ -19,7 +19,7 @@ export function Projects() {
         <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
           {/* Portfolio */}
           <Project
-            image={portfolio}
+            image={Portfolio}
             // lightImage={portfolioLight}
             lightImage=""
             title="Portfolio"
@@ -36,7 +36,7 @@ export function Projects() {
           ></Project>
           {/* Maintenance Manager */}
           <Project
-            image={maintenanceManager}
+            image={MaintenanceManager}
             lightImage=""
             title="Maintenance Manager"
             link="https://github.com/BigBadBodyPillow/maintenance-manager"
@@ -44,7 +44,7 @@ export function Projects() {
           ></Project>
           {/* todo */}
           <Project
-            image={todo}
+            image={ToDo}
             lightImage=""
             title="To-Do list"
             link="https://github.com/BigBadBodyPillow/todo-list"
@@ -52,7 +52,7 @@ export function Projects() {
           ></Project>
           {/* Event managerEventManager */}
           <Project
-            image={eventManager}
+            image={EventManager}
             lightImage=""
             title="Event Manager"
             link="https://github.com/BigBadBodyPillow/event-manager"
