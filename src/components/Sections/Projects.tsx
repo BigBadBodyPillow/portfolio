@@ -4,12 +4,13 @@ import { Project } from './Project.tsx';
 import './Projects.css';
 
 // webp
-import Portfolio from '../../assets/project-images/reduced/Portfolio.webp';
+// import Portfolio from '../../assets/project-images/reduced/Portfolio.webp';
+import Portfolio from './../../assets/project-images/reduced/Portfolio.webp';
 // import PortfolioLight from '../../assets/project-images/reduced/PortfolioLight.webp';
-import iTunesMediaCatalogue from '../../assets/project-images/reduced/iTunesMediaCatalogue.webp';
-import MaintenanceManager from '../../assets/project-images/reduced/MaintenanceManager.webp';
-import ToDo from '../../assets/project-images/reduced/ToDo.webp';
-import EventManager from '../../assets/project-images/reduced/EventManager.webp';
+import iTunesMediaCatalogue from './../../assets/project-images/reduced/iTunesMediaCatalogue.webp';
+import MaintenanceManager from './../../assets/project-images/reduced/MaintenanceManager.webp';
+import ToDo from './../../assets/project-images/reduced/ToDo.webp';
+import EventManager from './../../assets/project-images/reduced/EventManager.webp';
 
 export function Projects() {
   return (
