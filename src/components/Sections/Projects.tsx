@@ -31,7 +31,7 @@ export function Projects() {
             lightImage={PortfolioLight}
             title="Portfolio"
             link="https://github.com/BigBadBodyPillow/portfolio"
-            description="Portfolio description"
+            description="This Portfolio, built with Typescript React and Tailwind. It features a responsive design, dark mode support, and a collection of my projects."
           ></Project>
           {/* iTunes Media Catalogue */}
           <Project
@@ -39,7 +39,7 @@ export function Projects() {
             lightImage=""
             title="iTunes Media Catalogue"
             link="https://github.com/BigBadBodyPillow/Media-catalogue"
-            description="Description of iTunes Media Catalogue"
+            description="Built to utilise the itunes API, this project allows users to search for media and view details about it. It is  built with React, Tailwind, Express."
           ></Project>
           {/* Maintenance Manager */}
           <Project
@@ -47,7 +47,7 @@ export function Projects() {
             lightImage=""
             title="Maintenance Manager"
             link="https://github.com/BigBadBodyPillow/maintenance-manager"
-            description="Description of Maintenance Manager "
+            description="A web application designed to help users manage and track maintenance tasks. It features user authentication, and task management. It is built with React, Tailwind, Express, and MongoDB."
           ></Project>
           {/* todo */}
           <Project
@@ -55,7 +55,7 @@ export function Projects() {
             lightImage=""
             title="To-Do list"
             link="https://github.com/BigBadBodyPillow/todo-list"
-            description="Description of To-Do "
+            description="A simple to-do list application that allows users to add, edit, and delete tasks. It is built with React"
           ></Project>
           {/* Event managerEventManager */}
           <Project
@@ -63,11 +63,11 @@ export function Projects() {
             lightImage=""
             title="Event Manager"
             link="https://github.com/BigBadBodyPillow/event-manager"
-            description="Event Manager"
+            description="A web application designed to help users manage and track events. It features user authentication, event management, and a calendar view. It is built with React, Tailwind, Express, and MongoDB."
           ></Project>
 
           {/* more */}
-          <div className="border border-[var(--border-colour)] rounded-lg flex justify-center items-center  bg-[rgb(235,235,235)] dark:bg-[rgb(20,20,20)] select-none cursor-not-allowed min-h-[200px] z-1">
+          <div className="border border-[var(--border-colour)] rounded-lg flex justify-center items-center  bg-[rgb(235,235,235)] dark:bg-[rgb(20,20,20)] select-none cursor-not-allowed h-[200px] z-1">
             <h3 className="dark:text-[rgb(91,91,91)] text-[#858585] ">
               more
               <span className="dots">.</span>
