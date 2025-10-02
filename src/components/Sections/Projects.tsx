@@ -18,6 +18,7 @@ import iTunesMediaCatalogue from '/project-images/iTunesMediaCatalogue.webp';
 import MaintenanceManager from '/project-images/MaintenanceManager.webp';
 import ToDo from '/project-images/ToDo.webp';
 import EventManager from '/project-images/EventManager.webp';
+import Sudoku from '/project-images/Sudoku.webp';
 
 export function Projects() {
   return (
@@ -64,6 +65,13 @@ export function Projects() {
             title="Event Manager"
             link="https://github.com/BigBadBodyPillow/event-manager"
             description="A web application designed to help users manage and track events. It features user authentication, event management, and a calendar view. It is built with React, Tailwind, Express, and MongoDB."
+          ></Project>
+          <Project
+            image={Sudoku}
+            lightImage=""
+            title="Sudoku Clone (Work in Progress)"
+            link="https://github.com/BigBadBodyPillow/sudoku-clone"
+            description="A clone of sudoku built with react in typescript."
           ></Project>
 
           {/* more */}
