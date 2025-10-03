@@ -1,5 +1,5 @@
 // image
-import scrajj from '/src/assets/scrajj.avif';
+import scrajj from '../../assets/scrajj.gif';
 
 export function About() {
   return (
