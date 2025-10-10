@@ -26,6 +26,14 @@ export function Projects() {
       <div className="projects-content  text-container">
         <h2 className="text-4xl font-bold mb-4 pl-1">Projects</h2>
         <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
+          {/* Sudoku clone */}
+          <Project
+            image={Sudoku}
+            lightImage=""
+            title="Sudoku Clone (Work in Progress)"
+            link="https://github.com/BigBadBodyPillow/sudoku-clone"
+            description="A sudoku  game built with react. Features include notes,changing theme colours, changing font and, font size. Is responsive and can work on a phone."
+          ></Project>
           {/* Portfolio */}
           <Project
             image={Portfolio}
@@ -65,13 +73,6 @@ export function Projects() {
             title="Event Manager"
             link="https://github.com/BigBadBodyPillow/event-manager"
             description="A web application designed to help users manage and track events. It features user authentication, event management, and a calendar view. It is built with React, Tailwind, Express, and MongoDB."
-          ></Project>
-          <Project
-            image={Sudoku}
-            lightImage=""
-            title="Sudoku Clone (Work in Progress)"
-            link="https://github.com/BigBadBodyPillow/sudoku-clone"
-            description="A clone of sudoku built with react in typescript."
           ></Project>
 
           {/* more */}
