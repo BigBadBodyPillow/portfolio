@@ -10,6 +10,7 @@ import { Express } from '../../assets/skill-images/Express.tsx';
 import { ReactSVG } from '../../assets/skill-images/React.tsx';
 import { Node } from '../../assets/skill-images/Node.tsx';
 import { Git } from '../../assets/skill-images/Git.tsx';
+import { Postman } from '../../assets/skill-images/Postman.tsx';
 
 //components
 import { Skill } from './Skill.tsx';
@@ -74,6 +75,11 @@ export function Skills() {
             link="https://nodejs.org/docs/latest/api/"
           />
           <Skill Icon={Git} text="Git" link="https://git-scm.com/doc/" />
+          <Skill
+            Icon={Postman}
+            text="Postman"
+            link="https://www.postman.com/"
+          />
         </div>
       </div>
     </>

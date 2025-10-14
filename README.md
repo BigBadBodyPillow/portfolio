@@ -47,3 +47,4 @@ To run this project locally, you will need to have Node.js and npm installed.
 - [Grid Background](https://ui.aceternity.com/components/grid-and-dot-backgrounds)
 - [Favicon](https://www.svgrepo.com/)
 - [Other Icons](https://svgl.app/)
+- [svgviewer](https://www.svgviewer.dev/svg-to-react-jsx)
