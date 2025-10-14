@@ -95,7 +95,8 @@ export function Project({
         <img
           src={image}
           alt={`preview of ${title}`}
-          className="object-cover w-full aspect-[16/9] bg-[var(--border-colour)] border-1 border-[var(--border-colour)] rounded-sm mb-4 select-none"
+          // 960/493 is the lowest denomination of 1920/986 which is the image dimesnions
+          className="object-contain w-full aspect-[960/493] bg-[var(--border-colour)] border-1 border-[var(--border-colour)] rounded-sm mb-4 select-none"
           draggable="false"
         />
       </picture>

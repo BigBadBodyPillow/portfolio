@@ -48,3 +48,5 @@ To run this project locally, you will need to have Node.js and npm installed.
 - [Favicon](https://www.svgrepo.com/)
 - [Other Icons](https://svgl.app/)
 - [svgviewer](https://www.svgviewer.dev/svg-to-react-jsx)
+- [cloudconvert](https://cloudconvert.com/)
+- [reducedimages](https://www.reduceimages.com/)

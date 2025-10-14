@@ -19,6 +19,7 @@ import MaintenanceManager from '/project-images/MaintenanceManager.webp';
 import ToDo from '/project-images/ToDo.webp';
 import EventManager from '/project-images/EventManager.webp';
 import Sudoku from '/project-images/Sudoku.webp';
+import SudokuLight from '/project-images/SudokuLight.webp';
 
 export function Projects() {
   return (
@@ -29,7 +30,7 @@ export function Projects() {
           {/* Sudoku clone */}
           <Project
             image={Sudoku}
-            lightImage=""
+            lightImage={SudokuLight}
             title="Sudoku Clone (Work in Progress)"
             link="https://github.com/BigBadBodyPillow/sudoku-clone"
             description="A sudoku  game built with react. Features include notes,changing theme colours, changing font and, font size. Is responsive and can work on a phone."
