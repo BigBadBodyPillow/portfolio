@@ -10,8 +10,7 @@ export function About() {
           Hi! I'm Shiv.
         </p>
         <p className="font-[Roboto_mono] text-[var(--text-colour-main)]">
-          Idk what to add here. I don't usually have a lot to say about
-          anything. I like Dota, and PoE and uhh the colour red.
+          i dont like writing stuff or talking about myself
           <img
             src={scrajj}
             alt=" Scrajj"
