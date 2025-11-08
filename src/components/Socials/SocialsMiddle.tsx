@@ -5,7 +5,7 @@ import { SmallCat } from '../../assets/social-images/SmallCat.tsx';
 import { BigCat } from '../../assets/social-images/BigCat.tsx';
 
 export function SocialsMiddle() {
-  const [middleSize, setMiddleSize] = useState<'big' | 'small'>('small');
+  const [middleSize, setMiddleSize] = useState<'big' | 'small'>('big');
 
   const handleMiddleSize = () => {
     setMiddleSize((prev) => (prev === 'big' ? 'small' : 'big'));

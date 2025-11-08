@@ -3,8 +3,9 @@ import { SocialsListItem } from './SocialsListItem.tsx';
 import { SocialsMiddle } from './SocialsMiddle.tsx';
 //svg
 import { GitHub } from '../../assets/social-images/GitHub.tsx';
-import { Discord } from '../../assets/social-images/Discord.tsx';
+// import { Discord } from '../../assets/social-images/Discord.tsx';
 import { Youtube } from '../../assets/social-images/Youtube.tsx';
+import { Indeed } from '../../assets/social-images/Indeed.tsx';
 import { YoutubeMusic } from '../../assets/social-images/YoutubeMusic.tsx';
 
 //css
@@ -21,16 +22,21 @@ export function Socials() {
             label="Github logo"
           />
           <SocialsListItem
+            Icon={Indeed}
+            url="https://www.linkedin.com/in/shivjagath/"
+            label="Indeed logo"
+          />
+          <SocialsMiddle />
+          <SocialsListItem
             Icon={Youtube}
             url="https://www.youtube.com/@bigbadbodypillow"
             label="Youtube logo"
           />
-          <SocialsMiddle />
-          <SocialsListItem
+          {/* <SocialsListItem
             Icon={Discord}
             url="https://discordapp.com/users/244425759739871233"
             label="Discord logo"
-          />
+          /> */}
           <SocialsListItem
             Icon={YoutubeMusic}
             url="https://music.youtube.com/playlist?list=PLMTaN3qBEkVBBma9ZXkvglASpSuLbilEg"

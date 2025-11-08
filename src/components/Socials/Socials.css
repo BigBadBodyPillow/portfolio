@@ -6,7 +6,7 @@
 }
 
 .cat-container,
-  .socials-icon-container {
+.socials-icon-container {
   height: 3.5rem;
 }
 
@@ -27,6 +27,9 @@
   filter: drop-shadow(0 0 4px var(--accent-colour));
 }
 
+.socials-icon[aria-label='Indeed logo'] {
+  padding: 0.33rem;
+}
 /* @media (prefers-reduced-motion: no-preference) {
   svg {
     transition: filter 0.2s, fill 0.2s;
