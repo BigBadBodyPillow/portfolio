@@ -5,7 +5,7 @@ import RainbowLine from './components/RainbowLine/RainbowLine.tsx';
 import { GridBackground } from './components/GridBackground/GridBackground.tsx';
 import { Socials } from './components/Socials/Socials.tsx';
 import { BackgroundBlur } from './components/BackgroundBlur/BackgroundBlur.tsx';
-import { About } from './components/Sections/About.tsx';
+// import { About } from './components/Sections/About.tsx';
 import { Projects } from './components/Sections/Projects.tsx';
 import { Skills } from './components/Sections/Skills.tsx';
 import { EmailFooter } from './components/EmailFooter/EmailFooter.tsx';
@@ -36,7 +36,7 @@ function App() {
         </GridBackground>
       </div>
       <main className="flex flex-col justify-center items-center bg-stone-100 dark:bg-[var(--background-colour)] py-5 md:py-2 ">
-        <About />
+        {/* <About /> */}
         <Projects />
         <Skills />
       </main>
