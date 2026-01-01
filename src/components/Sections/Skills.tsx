@@ -8,6 +8,7 @@ import { TypeScript } from '../../assets/skill-images/TypeScript.tsx';
 import { MongoDB } from '../../assets/skill-images/MongoDB.tsx';
 import { Express } from '../../assets/skill-images/Express.tsx';
 import { ReactSVG } from '../../assets/skill-images/React.tsx';
+import { VueSVG } from '../../assets/skill-images/Vue.tsx';
 import { Node } from '../../assets/skill-images/Node.tsx';
 import { Git } from '../../assets/skill-images/Git.tsx';
 import { Postman } from '../../assets/skill-images/Postman.tsx';
@@ -69,6 +70,7 @@ export function Skills() {
             text="React"
             link="https://react.dev/reference/react"
           />
+          <Skill Icon={VueSVG} text="Vue" link="https://vuejs.org/" />
           <Skill
             Icon={Node}
             text="Node.js"
