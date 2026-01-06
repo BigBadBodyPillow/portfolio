@@ -34,7 +34,7 @@ export function Projects() {
             lightImage={SudokuLight}
             title="Sudoku Clone"
             link="https://github.com/BigBadBodyPillow/sudoku-clone"
-            description="A sudoku  game built with react. Features include notes,changing theme colours, changing font and, font size. Is responsive and can work on a phone."
+            description="A sudoku  game built with react. Additonally allows note taking ,changing theme colours, changing font, and font size. "
           ></Project>
           {/* Portfolio */}
           <Project
@@ -42,7 +42,7 @@ export function Projects() {
             lightImage={PortfolioLight}
             title="Portfolio"
             link="https://github.com/BigBadBodyPillow/portfolio"
-            description="This Portfolio, built with Typescript React and Tailwind. It features a responsive design, dark mode support, and a collection of my projects."
+            description="This Portfolio, built with Typescript React and Tailwind."
           ></Project>
           {/* iTunes Media Catalogue */}
           <Project
@@ -58,7 +58,7 @@ export function Projects() {
             lightImage=""
             title="Maintenance Manager"
             link="https://github.com/BigBadBodyPillow/maintenance-manager"
-            description="A web application designed to help users manage and track maintenance tasks. It features user authentication, and task management. It is built with React, Tailwind, Express, and MongoDB."
+            description="A web application designed to help users manage and track maintenance tasks. Its features include user authentication and task management. It is built with React, Tailwind, Express, and MongoDB."
           ></Project>
           {/* todo */}
           <Project
@@ -66,7 +66,7 @@ export function Projects() {
             lightImage=""
             title="To-Do list"
             link="https://github.com/BigBadBodyPillow/todo-list"
-            description="A simple to-do list application that allows users to add, edit, and delete tasks. It is built with React"
+            description="A Full-Stack web application that allows users to manage their tasks efficiently. Users can perform basic CRUD opperations as well as log-in, and register. The Front end is built with React, Formik and Axios, while the backend is built with Express and mongoose"
           ></Project>
           {/* Event managerEventManager */}
           <Project
@@ -74,9 +74,9 @@ export function Projects() {
             lightImage=""
             title="Event Manager"
             link="https://github.com/BigBadBodyPillow/event-manager"
-            description="A web application designed to help users manage and track events. It features user authentication, event management, and a calendar view. It is built with React, Tailwind, Express, and MongoDB."
+            description="A web application designed to help users manage and track events. Its features include user authentication, event management, and a calendar view. It is built with React, Tailwind, Express, and MongoDB."
           ></Project>
-           <Project
+          <Project
             image={Utility}
             lightImage=""
             title="Utility(Work in Progress)"
