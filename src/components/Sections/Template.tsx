@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from "react";
 
 interface ProjectProps {
   image: string;
@@ -19,28 +19,39 @@ export function Template({
 }: ProjectProps) {
   const cardRef = useRef<HTMLDivElement>(null);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   // distance on z axis for elements
   const titleHeight = 10;
   const paragraphHeight = 7;
 
-  // check for reduced motion status
+  // check for reduced motion status and touch device
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const touchQuery = window.matchMedia("(hover: none)");
     setPrefersReducedMotion(mediaQuery.matches);
+    setIsTouchDevice(touchQuery.matches);
 
     const handleChange = (e: MediaQueryListEvent) => {
       setPrefersReducedMotion(e.matches);
     };
 
-    mediaQuery.addEventListener('change', handleChange);
-    return () => mediaQuery.removeEventListener('change', handleChange);
+    const handleTouchChange = (e: MediaQueryListEvent) => {
+      setIsTouchDevice(e.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleChange);
+    touchQuery.addEventListener("change", handleTouchChange);
+    return () => {
+      mediaQuery.removeEventListener("change", handleChange);
+      touchQuery.removeEventListener("change", handleTouchChange);
+    };
   }, []);
 
   useEffect(() => {
     const card = cardRef.current;
-    // stop if user has prefers reduced motion
-    if (!card || prefersReducedMotion) return;
+    // stop if user has prefers reduced motion or is on a touch device
+    if (!card || prefersReducedMotion || isTouchDevice) return;
 
     const handleMouseMove = (e: MouseEvent) => {
       const rect = card.getBoundingClientRect();
@@ -58,7 +69,7 @@ export function Template({
       `;
 
       // Add parallax effect to inner elements
-      const elements = card.querySelectorAll('a, p');
+      const elements = card.querySelectorAll("a, p");
 
       elements.forEach((element, index) => {
         const zHeight = [titleHeight, paragraphHeight][index] || 0;
@@ -68,23 +79,23 @@ export function Template({
 
     const handleMouseLeave = () => {
       card.style.transform =
-        'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0)';
+        "perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0)";
 
-      const elements = card.querySelectorAll('a, p, .tags');
+      const elements = card.querySelectorAll("a, p, .tags");
 
       elements.forEach((element) => {
-        (element as HTMLElement).style.transform = '';
+        (element as HTMLElement).style.transform = "";
       });
     };
 
-    card.addEventListener('mousemove', handleMouseMove);
-    card.addEventListener('mouseleave', handleMouseLeave);
+    card.addEventListener("mousemove", handleMouseMove);
+    card.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
-      card.removeEventListener('mousemove', handleMouseMove);
-      card.removeEventListener('mouseleave', handleMouseLeave);
+      card.removeEventListener("mousemove", handleMouseMove);
+      card.removeEventListener("mouseleave", handleMouseLeave);
     };
-  }, [prefersReducedMotion]);
+  }, [prefersReducedMotion, isTouchDevice]);
 
   return (
     <div

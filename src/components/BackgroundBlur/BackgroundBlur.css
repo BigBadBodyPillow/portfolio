@@ -13,7 +13,7 @@
 
   width: 100%;
   max-width: 600px;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 /* make brighter colours more visible (not the purples/blues) */

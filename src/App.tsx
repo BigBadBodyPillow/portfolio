@@ -1,15 +1,15 @@
-import './App.css';
+import "./App.css";
 
 //components
-import RainbowLine from './components/RainbowLine/RainbowLine.tsx';
-import { GridBackground } from './components/GridBackground/GridBackground.tsx';
-import { Socials } from './components/Socials/Socials.tsx';
-import { BackgroundBlur } from './components/BackgroundBlur/BackgroundBlur.tsx';
+import RainbowLine from "./components/RainbowLine/RainbowLine.tsx";
+import { GridBackground } from "./components/GridBackground/GridBackground.tsx";
+import { Socials } from "./components/Socials/Socials.tsx";
+import { BackgroundBlur } from "./components/BackgroundBlur/BackgroundBlur.tsx";
 // import { About } from './components/Sections/About.tsx';
-import { Projects } from './components/Sections/Projects.tsx';
-import { Templates } from './components/Sections/Templates.tsx';
-import { Skills } from './components/Sections/Skills.tsx';
-import { EmailFooter } from './components/EmailFooter/EmailFooter.tsx';
+import { Projects } from "./components/Sections/Projects.tsx";
+import { Templates } from "./components/Sections/Templates.tsx";
+import { Skills } from "./components/Sections/Skills.tsx";
+import { EmailFooter } from "./components/EmailFooter/EmailFooter.tsx";
 
 // stuff todo later
 // testing
