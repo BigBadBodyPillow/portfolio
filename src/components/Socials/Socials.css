@@ -27,7 +27,7 @@
   filter: drop-shadow(0 0 4px var(--accent-colour));
 }
 
-.socials-icon[aria-label='Indeed logo'] {
+.socials-icon[aria-label="Indeed logo"] {
   padding: 0.33rem;
 }
 /* @media (prefers-reduced-motion: no-preference) {
@@ -39,13 +39,13 @@
 @media (max-width: 630px) {
   .cat-container,
   .socials-icon-container {
-    height: 3rem;
+    max-height: 3rem;
   }
 }
 @media (max-width: 400px) {
   .cat-container,
   .socials-icon-container {
-    height: 2.5rem;
+    max-height: 2.5rem;
   }
   .socials-container {
     padding: 0;
