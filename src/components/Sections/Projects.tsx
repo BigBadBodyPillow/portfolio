@@ -1,18 +1,18 @@
 //components
-import { Project } from './Project.tsx';
+import { Project } from "./Project.tsx";
 //css
-import './Projects.css';
+import "./Projects.css";
 
 // images
-import Portfolio from '/project-images/Portfolio.webp';
-import PortfolioLight from '/project-images/PortfolioLight.webp';
-import iTunesMediaCatalogue from '/project-images/iTunesMediaCatalogue.webp';
-import MaintenanceManager from '/project-images/MaintenanceManager.webp';
-import ToDo from '/project-images/ToDo.webp';
-import EventManager from '/project-images/EventManager.webp';
-import Sudoku from '/project-images/Sudoku.webp';
-import SudokuLight from '/project-images/SudokuLight.webp';
-import Utility from '/project-images/Utility.webp';
+import Portfolio from "/project-images/Portfolio.webp";
+import PortfolioLight from "/project-images/PortfolioLight.webp";
+import iTunesMediaCatalogue from "/project-images/iTunesMediaCatalogue.webp";
+import MaintenanceManager from "/project-images/MaintenanceManager.webp";
+import ToDo from "/project-images/ToDo.webp";
+import EventManager from "/project-images/EventManager.webp";
+import Sudoku from "/project-images/Sudoku.webp";
+import SudokuLight from "/project-images/SudokuLight.webp";
+import Utility from "/project-images/Utility.webp";
 
 export function Projects() {
   return (
@@ -68,13 +68,14 @@ export function Projects() {
             link="https://github.com/BigBadBodyPillow/event-manager"
             description="A web application designed to help users manage and track events. Its features include user authentication, event management, and a calendar view. It is built with React, Tailwind, Express, and MongoDB."
           ></Project>
-          <Project
+          {/* utility */}
+          {/* <Project
             image={Utility}
             lightImage=""
             title="Utility(Work in Progress)"
             link="https://github.com/BigBadBodyPillow/utility"
             description="A personal utility app that combines many of my personal commonly used tools into one. Specifically the purpose is just because it gets kinda annoying opening google sheets / a calculaotor and then other websites"
-          ></Project>
+          ></Project> */}
 
           {/* more */}
           <div className="border border-[var(--border-colour)] rounded-lg flex justify-center items-center  bg-[rgb(235,235,235)] dark:bg-[rgb(20,20,20)] select-none cursor-not-allowed h-[200px] z-1">
