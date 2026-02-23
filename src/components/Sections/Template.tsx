@@ -1,10 +1,12 @@
 import { useRef, useEffect, useState } from "react";
+import ExternalLink from "../../assets/ExternalLink.svg?react";
 
 interface ProjectProps {
   image: string;
-  lightImage: string;
+  lightImage?: string;
   title: string;
   link: string;
+  demo?: string;
   description: string;
   tags: string[];
 }
@@ -14,6 +16,7 @@ export function Template({
   lightImage,
   title,
   link,
+  demo,
   description,
   tags,
 }: ProjectProps) {
@@ -72,6 +75,7 @@ export function Template({
       const elements = card.querySelectorAll("a, p");
 
       elements.forEach((element, index) => {
+        console.log(element);
         const zHeight = [titleHeight, paragraphHeight][index] || 0;
         (element as HTMLElement).style.transform = `translateZ(${zHeight}px)`;
       });
@@ -103,16 +107,27 @@ export function Template({
       className="template p-2 pb-4 border border-[var(--border-colour)] rounded-lg cursor-grab"
       data-reduced-motion={prefersReducedMotion}
     >
-      <picture>
-        <source srcSet={lightImage} media="(prefers-color-scheme:light)" />
-        <img
-          src={image}
-          alt={`preview of ${title}`}
-          // aspect ratio is my browser without the top bar
-          className="object-contain w-full aspect-[1.90193164933] bg-[var(--border-colour)] border-1 border-[var(--border-colour)] rounded-sm mb-4 select-none"
-          draggable="false"
-        />
-      </picture>
+      <div className="image-wrapper relative">
+        <picture>
+          <source srcSet={lightImage} media="(prefers-color-scheme:light)" />
+          <img
+            src={image}
+            alt={`preview of ${title}`}
+            // aspect ratio is my browser without the top bar
+            className="object-contain w-full aspect-[1.90193164933] bg-[var(--border-colour)] border-1 border-[var(--border-colour)] rounded-sm mb-4 select-none"
+            draggable="false"
+          />
+        </picture>
+        <a
+          aria-label="demo link"
+          className="demo-link rounded-lg bg-white absolute right-[10px] bottom-[10px] p-1 shadow-md  transform hover:scale-[1.2] transition-transform duration-200 ease-out"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={demo}
+        >
+          <ExternalLink />
+        </a>
+      </div>
       <a
         className="font-semibold w-full"
         href={link}

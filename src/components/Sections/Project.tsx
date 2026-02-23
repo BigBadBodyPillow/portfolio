@@ -1,10 +1,14 @@
 import { useRef, useEffect, useState } from "react";
 
+// svg
+import ExternalLink from "../../assets/ExternalLink.svg?react";
+
 interface ProjectProps {
   image: string;
-  lightImage: string;
+  lightImage?: string;
   title: string;
   link: string;
+  demo?: string;
   description: string;
 }
 
@@ -13,6 +17,7 @@ export function Project({
   lightImage,
   title,
   link,
+  demo,
   description,
 }: ProjectProps) {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -101,16 +106,27 @@ export function Project({
       className="project p-2 pb-4 border border-[var(--border-colour)] rounded-lg cursor-grab"
       data-reduced-motion={prefersReducedMotion}
     >
-      <picture>
-        <source srcSet={lightImage} media="(prefers-color-scheme:light)" />
-        <img
-          src={image}
-          alt={`preview of ${title}`}
-          // 960/493 is the lowest denomination of 1920/986 which is the image dimesnions
-          className="object-contain w-full aspect-[960/493] bg-[var(--border-colour)] border-1 border-[var(--border-colour)] rounded-sm mb-4 select-none"
-          draggable="false"
-        />
-      </picture>
+      <div className="image-wrapper relative">
+        <picture>
+          <source srcSet={lightImage} media="(prefers-color-scheme:light)" />
+          <img
+            src={image}
+            alt={`preview of ${title}`}
+            // 960/493 is the lowest denomination of 1920/986 which is the image dimesnions
+            className="object-contain w-full aspect-[960/493] bg-[var(--border-colour)] border-1 border-[var(--border-colour)] rounded-sm mb-4 select-none"
+            draggable="false"
+          />
+          <a
+            aria-label="demo link"
+            className="demo-link rounded-lg bg-white absolute right-[10px] bottom-[10px] p-1 shadow-md  transform hover:scale-[1.2] transition-transform duration-200 ease-out"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={demo}
+          >
+            <ExternalLink />
+          </a>
+        </picture>
+      </div>
       <a
         className="font-semibold w-full"
         href={link}

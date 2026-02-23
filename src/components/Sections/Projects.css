@@ -52,6 +52,10 @@
   color: var(--accent-colour);
 }
 
+.demo-link:not([href]) {
+  display: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .dots {
     display: inline-block;

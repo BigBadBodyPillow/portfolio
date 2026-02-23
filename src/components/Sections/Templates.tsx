@@ -18,9 +18,9 @@ export function Templates() {
           {/* tag options: JavaScript, HTML, CSS, Vue, React, Svelt, Angular */}
           <Template
             image={eCommerce1}
-            lightImage={""}
             title="eCommerce Website 1"
             link="https://github.com/BigBadBodyPillow/eCommerce-Template-1"
+            demo="https://bigbadbodypillow.github.io/eCommerce-Template-1/"
             description="Simple eCommerce Template."
             tags={["Vue"]}
           ></Template>
@@ -29,6 +29,7 @@ export function Templates() {
             lightImage={ButtonsLight}
             title="Buttons"
             link="https://github.com/BigBadBodyPillow/buttons"
+            demo="https://bigbadbodypillow.github.io/buttons/"
             description="A compilation of differnt buttons."
             tags={["HTML", "CSS", "JavaScript"]}
           ></Template>

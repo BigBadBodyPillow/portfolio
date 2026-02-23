@@ -1,5 +1,6 @@
 //components
 import { Project } from "./Project.tsx";
+
 //css
 import "./Projects.css";
 
@@ -12,7 +13,7 @@ import ToDo from "/project-images/ToDo.webp";
 import EventManager from "/project-images/EventManager.webp";
 import Sudoku from "/project-images/Sudoku.webp";
 import SudokuLight from "/project-images/SudokuLight.webp";
-import Utility from "/project-images/Utility.webp";
+// import Utility from "/project-images/Utility.webp";
 
 export function Projects() {
   return (
@@ -26,6 +27,7 @@ export function Projects() {
             lightImage={SudokuLight}
             title="Sudoku Clone"
             link="https://github.com/BigBadBodyPillow/sudoku-clone"
+            demo="https://bigbadbodypillow.github.io/sudoku-clone/"
             description="A sudoku  game built with react. Additonally allows note taking ,changing theme colours, changing font, and font size. "
           ></Project>
           {/* Portfolio */}
@@ -39,15 +41,14 @@ export function Projects() {
           {/* iTunes Media Catalogue */}
           <Project
             image={iTunesMediaCatalogue}
-            lightImage=""
             title="iTunes Media Catalogue"
             link="https://github.com/BigBadBodyPillow/Media-catalogue"
+            demo="https://itunesmedia.onrender.com/"
             description="Built to utilise the itunes API, this project allows users to search for media and view details about it. It is  built with React, Tailwind, Express."
           ></Project>
           {/* Maintenance Manager */}
           <Project
             image={MaintenanceManager}
-            lightImage=""
             title="Maintenance Manager"
             link="https://github.com/BigBadBodyPillow/maintenance-manager"
             description="A web application designed to help users manage and track maintenance tasks. Its features include user authentication and task management. It is built with React, Tailwind, Express, and MongoDB."
@@ -55,7 +56,6 @@ export function Projects() {
           {/* todo */}
           <Project
             image={ToDo}
-            lightImage=""
             title="To-Do list"
             link="https://github.com/BigBadBodyPillow/todo-list"
             description="A Full-Stack web application that allows users to manage their tasks efficiently. Users can perform basic CRUD opperations as well as log-in, and register. The Front end is built with React, Formik and Axios, while the backend is built with Express and mongoose"
@@ -63,7 +63,6 @@ export function Projects() {
           {/* Event managerEventManager */}
           <Project
             image={EventManager}
-            lightImage=""
             title="Event Manager"
             link="https://github.com/BigBadBodyPillow/event-manager"
             description="A web application designed to help users manage and track events. Its features include user authentication, event management, and a calendar view. It is built with React, Tailwind, Express, and MongoDB."

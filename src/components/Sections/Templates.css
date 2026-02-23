@@ -26,6 +26,9 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
+.demo-link:not([href]) {
+  display: none;
+}
 
 .template img {
   transition: transform 0.1s ease-out;
