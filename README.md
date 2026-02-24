@@ -4,7 +4,7 @@ This is my personal portfolio website, built with React and TypeScript.
 
 ## TODO
 
-[ ] refactor projects and templates (they use a lot of duplicate code)
+- [ ] refactor projects and templates (they use a lot of duplicate code)
 
 ## Technologies Used
 
