@@ -33,6 +33,16 @@
 .template img {
   transition: transform 0.1s ease-out;
   transform-style: preserve-3d;
+  display: grid;
+  place-items: center;
+  color: var(--text-colour);
+  font-size: 2rem;
+  background-color: #454448;
+  background-image: url("/Topography.svg");
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
 }
 
 .template:hover img {

@@ -103,7 +103,7 @@ export function Project({
   return (
     <div
       ref={cardRef}
-      className="project p-2 pb-4 border border-[var(--border-colour)] rounded-lg cursor-grab"
+      className="project p-2 pb-4 border border-(--border-colour) rounded-lg cursor-grab"
       data-reduced-motion={prefersReducedMotion}
     >
       <div className="image-wrapper relative">
@@ -111,14 +111,14 @@ export function Project({
           <source srcSet={lightImage} media="(prefers-color-scheme:light)" />
           <img
             src={image}
-            alt={`preview of ${title}`}
+            alt={`${title}`}
             // 960/493 is the lowest denomination of 1920/986 which is the image dimesnions
-            className="object-contain w-full aspect-[960/493] bg-[var(--border-colour)] border-1 border-[var(--border-colour)] rounded-sm mb-4 select-none"
+            className="object-cover bg-cover w-full aspect-960/493 bg-(--border-colour) border-2 border-(--border-colour) rounded-sm mb-4 select-none"
             draggable="false"
           />
           <a
             aria-label="demo link"
-            className="demo-link rounded-lg bg-white absolute right-[10px] bottom-[10px] p-1 shadow-md  transform hover:scale-[1.2] transition-transform duration-200 ease-out"
+            className="demo-link rounded-lg bg-white absolute right-2.5 bottom-2.5 p-1 shadow-md  transform hover:scale-[1.2] transition-transform duration-200 ease-out"
             target="_blank"
             rel="noopener noreferrer"
             href={demo}

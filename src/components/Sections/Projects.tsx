@@ -67,6 +67,13 @@ export function Projects() {
             link="https://github.com/BigBadBodyPillow/event-manager"
             description="A web application designed to help users manage and track events. Its features include user authentication, event management, and a calendar view. It is built with React, Tailwind, Express, and MongoDB."
           ></Project>
+          <Project
+            image=""
+            title="Notes (wip)"
+            link="https://github.com/BigBadBodyPillow/Notes"
+            demo="https://bigbadbodypillow.github.io/Notes/"
+            description="Built to resolve minor personal inconveniences. Using react-draggable for facilitate repositionion of components"
+          ></Project>
           {/* utility */}
           {/* <Project
             image={Utility}
@@ -77,7 +84,7 @@ export function Projects() {
           ></Project> */}
 
           {/* more */}
-          <div className="border border-[var(--border-colour)] rounded-lg flex justify-center items-center  bg-[rgb(235,235,235)] dark:bg-[rgb(20,20,20)] select-none cursor-not-allowed h-[200px] z-1">
+          <div className="border border-(--border-colour) rounded-lg flex justify-center items-center  bg-[rgb(235,235,235)] dark:bg-[rgb(20,20,20)] select-none cursor-not-allowed h-50 z-1">
             <h3 className="dark:text-[rgb(91,91,91)] text-[#858585] ">
               more
               <span className="dots">.</span>

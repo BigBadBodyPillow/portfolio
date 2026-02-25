@@ -104,7 +104,7 @@ export function Template({
   return (
     <div
       ref={cardRef}
-      className="template p-2 pb-4 border border-[var(--border-colour)] rounded-lg cursor-grab"
+      className="template p-2 pb-4 border border-(--border-colour) rounded-lg cursor-grab"
       data-reduced-motion={prefersReducedMotion}
     >
       <div className="image-wrapper relative">
@@ -114,13 +114,13 @@ export function Template({
             src={image}
             alt={`preview of ${title}`}
             // aspect ratio is my browser without the top bar
-            className="object-contain w-full aspect-[1.90193164933] bg-[var(--border-colour)] border-1 border-[var(--border-colour)] rounded-sm mb-4 select-none"
+            className="object-cover  w-full aspect-[1.90193164933] bg-(--border-colour) border-2 border-(--border-colour) rounded-sm mb-4 select-none"
             draggable="false"
           />
         </picture>
         <a
           aria-label="demo link"
-          className="demo-link rounded-lg bg-white absolute right-[10px] bottom-[10px] p-1 shadow-md  transform hover:scale-[1.2] transition-transform duration-200 ease-out"
+          className="demo-link rounded-lg bg-white absolute right-2.5 bottom-2.5 p-1 shadow-md  transform hover:scale-[1.2] transition-transform duration-200 ease-out"
           target="_blank"
           rel="noopener noreferrer"
           href={demo}
