@@ -72,7 +72,7 @@ export function Projects() {
             title="Notes (wip)"
             link="https://github.com/BigBadBodyPillow/Notes"
             demo="https://bigbadbodypillow.github.io/Notes/"
-            description="Built to resolve minor personal inconveniences. Using react-draggable for facilitate repositionion of components"
+            description="Built to resolve minor personal inconveniences. Using react-draggable to facilitate repositionion of components"
           ></Project>
           {/* utility */}
           {/* <Project
