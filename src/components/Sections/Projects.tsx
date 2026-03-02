@@ -31,13 +31,13 @@ export function Projects() {
             description="A sudoku  game built with react. Additonally allows note taking ,changing theme colours, changing font, and font size. "
           ></Project>
           {/* Portfolio */}
-          <Project
+          {/* <Project
             image={Portfolio}
             lightImage={PortfolioLight}
             title="Portfolio"
             link="https://github.com/BigBadBodyPillow/portfolio"
             description="This Portfolio, built with Typescript React and Tailwind."
-          ></Project>
+          ></Project> */}
           {/* iTunes Media Catalogue */}
           <Project
             image={iTunesMediaCatalogue}
@@ -63,7 +63,7 @@ export function Projects() {
           {/* Event managerEventManager */}
           <Project
             image={EventManager}
-            title="Event Manager"
+            title="Event Planner"
             link="https://github.com/BigBadBodyPillow/event-manager"
             description="A web application designed to help users manage and track events. Its features include user authentication, event management, and a calendar view. It is built with React, Tailwind, Express, and MongoDB."
           ></Project>
