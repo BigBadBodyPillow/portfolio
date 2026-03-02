@@ -5,8 +5,8 @@ import { Project } from "./Project.tsx";
 import "./Projects.css";
 
 // images
-import Portfolio from "/project-images/Portfolio.webp";
-import PortfolioLight from "/project-images/PortfolioLight.webp";
+// import Portfolio from "/project-images/Portfolio.webp";
+// import PortfolioLight from "/project-images/PortfolioLight.webp";
 import iTunesMediaCatalogue from "/project-images/iTunesMediaCatalogue.webp";
 import MaintenanceManager from "/project-images/MaintenanceManager.webp";
 import ToDo from "/project-images/ToDo.webp";
