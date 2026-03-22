@@ -13,6 +13,8 @@ import ToDo from "/project-images/ToDo.webp";
 import EventManager from "/project-images/EventManager.webp";
 import Sudoku from "/project-images/Sudoku.webp";
 import SudokuLight from "/project-images/SudokuLight.webp";
+import Notes from "/project-images/Notes.webp";
+import NotesLight from "/project-images/NotesLight.webp";
 // import Utility from "/project-images/Utility.webp";
 
 export function Projects() {
@@ -68,11 +70,12 @@ export function Projects() {
             description="A web application designed to help users manage and track events. Its features include user authentication, event management, and a calendar view. It is built with React, Tailwind, Express, and MongoDB."
           ></Project>
           <Project
-            image=""
-            title="Notes (wip)"
+            image={Notes}
+            lightImage={NotesLight}
+            title="Notes ( WIP )"
             link="https://github.com/BigBadBodyPillow/Notes"
             demo="https://bigbadbodypillow.github.io/Notes/"
-            description="Built to resolve minor personal inconveniences. Using react-draggable to facilitate repositionion of components"
+            description="An 'all in one' Notes, Calculator, Timer, and Clock application built to resolve personal minor  inconveniences. leverage Lexical for the rich text editor and react-draggable for the movable calculator. Built with react. Supports dark and light themes and is mobile friendly"
           ></Project>
           {/* utility */}
           {/* <Project

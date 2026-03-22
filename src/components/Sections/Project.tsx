@@ -135,7 +135,7 @@ export function Project({
       >
         {title}
       </a>
-      <p className="text-sm font-[Roboto_mono]">{description}</p>
+      <p className="text-sm font-[Roboto_mono] text-pretty ">{description}</p>
     </div>
   );
 }
