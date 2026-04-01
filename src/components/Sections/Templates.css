@@ -104,6 +104,13 @@
 .Angular {
   --tag-colour: #ea1738;
 }
+@media (prefers-color-scheme: light) {
+  .JavaScript,
+  .Vue,
+  .React {
+    --tag-background: #000000;
+  }
+}
 /* .JavaScript {
   --JavaScript: #f7df1d;
   --JavaScript-bg: rgb(from var(--JavaScript) r g b / 0.2);

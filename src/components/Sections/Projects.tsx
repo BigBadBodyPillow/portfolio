@@ -23,6 +23,15 @@ export function Projects() {
       <div className="projects-content  text-container">
         <h2 className="text-4xl font-bold mb-4 pl-1">Projects</h2>
         <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
+          {/* notes */}
+          <Project
+            image={Notes}
+            lightImage={NotesLight}
+            title="Notes"
+            link="https://github.com/BigBadBodyPillow/Notes"
+            demo="https://bigbadbodypillow.github.io/Notes/"
+            description='An "all in one" Notes, Calculator, Timer, and Clock application built to resolve personal minor  inconveniences. leverage Lexical for the rich text editor and react-draggable for the movable calculator. Built with react. Supports dark and light themes and is mobile friendly'
+          ></Project>
           {/* Sudoku clone */}
           <Project
             image={Sudoku}
@@ -30,7 +39,7 @@ export function Projects() {
             title="Sudoku Clone"
             link="https://github.com/BigBadBodyPillow/sudoku-clone"
             demo="https://bigbadbodypillow.github.io/sudoku-clone/"
-            description="A sudoku  game built with react. Additonally allows note taking ,changing theme colours, changing font, and font size. "
+            description="A fully interactive Sudoku game built with React and TypeScript, featuring advanced gameplay enhancements; Players can add notes for strategic solving, switch between custom fonts, and toggle light/dark themes for a personalised experience. "
           ></Project>
           {/* Portfolio */}
           {/* <Project
@@ -69,14 +78,6 @@ export function Projects() {
             link="https://github.com/BigBadBodyPillow/event-manager"
             description="A web application designed to help users manage and track events. Its features include user authentication, event management, and a calendar view. It is built with React, Tailwind, Express, and MongoDB."
           ></Project>
-          <Project
-            image={Notes}
-            lightImage={NotesLight}
-            title="Notes ( WIP )"
-            link="https://github.com/BigBadBodyPillow/Notes"
-            demo="https://bigbadbodypillow.github.io/Notes/"
-            description="An 'all in one' Notes, Calculator, Timer, and Clock application built to resolve personal minor  inconveniences. leverage Lexical for the rich text editor and react-draggable for the movable calculator. Built with react. Supports dark and light themes and is mobile friendly"
-          ></Project>
           {/* utility */}
           {/* <Project
             image={Utility}
@@ -85,7 +86,6 @@ export function Projects() {
             link="https://github.com/BigBadBodyPillow/utility"
             description="A personal utility app that combines many of my personal commonly used tools into one. Specifically the purpose is just because it gets kinda annoying opening google sheets / a calculaotor and then other websites"
           ></Project> */}
-
           {/* more */}
           <div className="border border-(--border-colour) rounded-lg flex justify-center items-center  bg-[rgb(235,235,235)] dark:bg-[rgb(20,20,20)] select-none cursor-not-allowed h-50 z-1">
             <h3 className="dark:text-[rgb(91,91,91)] text-[#858585] ">

@@ -7,6 +7,8 @@ import "./Templates.css";
 import eCommerce1 from "/template-images/eCommerce1.webp";
 import Buttons from "/template-images/Buttons.webp";
 import ButtonsLight from "/template-images/ButtonsLight.webp";
+import Template2 from "/template-images/Template2.webp";
+import Template2Light from "/template-images/Template2Light.webp";
 
 export function Templates() {
   return (
@@ -16,6 +18,15 @@ export function Templates() {
         <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
           {/* case sensitive */}
           {/* tag options: JavaScript, HTML, CSS, Vue, React, Svelt, Angular */}
+          <Template
+            image={Template2}
+            lightImage={Template2Light}
+            title="Template 2"
+            link="https://github.com/BigBadBodyPillow/Template-2"
+            demo="https://bigbadbodypillow.github.io/template-2/"
+            description="Simple eCommerce Template."
+            tags={["React"]}
+          ></Template>
           <Template
             image={eCommerce1}
             title="eCommerce Website 1"
