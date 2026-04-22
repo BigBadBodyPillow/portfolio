@@ -21,10 +21,10 @@ export function Templates() {
           <Template
             image={Template2}
             lightImage={Template2Light}
-            title="Template 2"
+            title="Corporate Home Page"
             link="https://github.com/BigBadBodyPillow/Template-2"
             demo="https://bigbadbodypillow.github.io/template-2/"
-            description="Simple eCommerce Template."
+            description="A corporate home page, inspired by Microsofts .NET"
             tags={["React"]}
           ></Template>
           <Template
@@ -32,7 +32,7 @@ export function Templates() {
             title="eCommerce Website 1"
             link="https://github.com/BigBadBodyPillow/eCommerce-Template-1"
             demo="https://bigbadbodypillow.github.io/eCommerce-Template-1/"
-            description="Simple eCommerce Template."
+            description="Simple eCommerce template."
             tags={["Vue"]}
           ></Template>
           {/* <Template
