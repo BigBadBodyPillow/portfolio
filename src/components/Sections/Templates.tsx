@@ -9,6 +9,7 @@ import eCommerce1 from "/template-images/eCommerce1.webp";
 // import ButtonsLight from "/template-images/ButtonsLight.webp";
 import Template2 from "/template-images/Template2.webp";
 import Template2Light from "/template-images/Template2Light.webp";
+import Aetherfield from "/template-images/Aetherfield.webp";
 
 export function Templates() {
   return (
@@ -18,6 +19,14 @@ export function Templates() {
         <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
           {/* case sensitive */}
           {/* tag options: JavaScript, HTML, CSS, Vue, React, Svelt, Angular */}
+          <Template
+            image={Aetherfield}
+            title="Modern, Clean SaaS Company "
+            link="https://github.com/BigBadBodyPillow/template-3"
+            demo="https://bigbadbodypillow.github.io/template-3/"
+            description="Built from a figma file"
+            tags={["React"]}
+          ></Template>
           <Template
             image={Template2}
             lightImage={Template2Light}

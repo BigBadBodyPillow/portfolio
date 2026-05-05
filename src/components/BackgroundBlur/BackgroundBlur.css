@@ -20,13 +20,13 @@
 @media (prefers-color-scheme: light) {
   .backthing {
     background-image: radial-gradient(
-      rgba(254, 242, 106, 0.4),
-      rgba(254, 132, 98, 0.4),
-      rgba(255, 112, 203, 0.4),
+      rgba(254, 242, 106, 0.2),
+      rgba(254, 132, 98, 0.2),
+      rgba(255, 112, 203, 0.2),
       rgba(210, 112, 255, 0.2),
       rgba(116, 58, 213, 0.2),
       rgba(112, 157, 248, 0.2),
-      rgba(91, 255, 189, 0.4),
+      rgba(91, 255, 189, 0.2),
       transparent
     );
   }
