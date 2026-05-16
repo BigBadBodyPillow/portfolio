@@ -1,4 +1,4 @@
-footer h1 {
+.email {
   font-size: 10rem;
   color: transparent;
   background-image: var(--rainbow);
@@ -11,7 +11,7 @@ footer h1 {
 
 /* Disable animation when reduced motion is preferred */
 @media (prefers-reduced-motion: reduce) {
-  footer h1 {
+  .email {
     animation: none;
     /* background-image: var(--accent-colour);
     background-clip: text; */
@@ -19,67 +19,67 @@ footer h1 {
 }
 
 @media (max-width: 2084px) {
-  footer h1 {
+  .email {
     font-size: 9rem;
   }
 }
 @media (max-width: 1884px) {
-  footer h1 {
+  .email {
     font-size: 8rem;
   }
 }
 @media (max-width: 1684px) {
-  footer h1 {
+  .email {
     font-size: 7rem;
   }
 }
 @media (max-width: 1484px) {
-  footer h1 {
+  .email {
     font-size: 6rem;
   }
 }
 @media (max-width: 1284px) {
-  footer h1 {
+  .email {
     font-size: 5rem;
   }
 }
 @media (max-width: 1084px) {
-  footer h1 {
+  .email {
     font-size: 4.3rem;
   }
 }
 @media (max-width: 884px) {
-  footer h1 {
+  .email {
     font-size: 3.8rem;
   }
 }
 @media (max-width: 800px) {
-  footer h1 {
+  .email {
     font-size: 3.5rem;
   }
 }
 @media (max-width: 750px) {
-  footer h1 {
+  .email {
     font-size: 3rem;
   }
 }
 @media (max-width: 650px) {
-  footer h1 {
+  .email {
     font-size: 2.6rem;
   }
 }
 @media (max-width: 550px) {
-  footer h1 {
+  .email {
     font-size: 2rem;
   }
 }
 @media (max-width: 420px) {
-  footer h1 {
+  .email {
     font-size: 1.6rem;
   }
 }
 @media (max-width: 340px) {
-  footer h1 {
+  .email {
     font-size: 1rem;
   }
 }

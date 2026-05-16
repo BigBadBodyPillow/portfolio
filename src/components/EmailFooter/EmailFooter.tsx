@@ -1,11 +1,13 @@
 //css
-import './EmailFooter.css';
+import "./EmailFooter.css";
 
 export function EmailFooter() {
   return (
     <>
       <footer className="w-screen h-screen flex items-center justify-center dark:bg-black bg-white">
-        <h1>ItsShivJagath@gmail.com</h1>
+        <a className="email" href="mailto:ItsShivJagath@gmail.com">
+          ItsShivJagath@gmail.com
+        </a>
       </footer>
     </>
   );
