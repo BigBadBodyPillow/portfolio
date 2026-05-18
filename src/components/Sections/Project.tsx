@@ -25,8 +25,50 @@ export function Project({
   const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   // distance on z axis for elements
-  const titleHeight = 10;
-  const paragraphHeight = 7;
+  const titleHeight = 20;
+  const externalLinkHeight = 0; /* fix not working? */
+  const paragraphHeight = 15;
+
+  // Add parallax effect to inner elements
+  function addElementParrallax(parent: HTMLDivElement) {
+    const titleElement = parent.querySelector(".title");
+    const descriptionElement = parent.querySelector(".description");
+    const demoLinkElement = parent.querySelector(".demo-link");
+
+    if (titleElement) {
+      (titleElement as HTMLElement).style.transform =
+        `translateZ(${titleHeight}px)`;
+    }
+
+    if (demoLinkElement) {
+      (demoLinkElement as HTMLElement).style.transform =
+        `translateZ(${externalLinkHeight}px)`;
+    }
+
+    if (descriptionElement) {
+      (descriptionElement as HTMLElement).style.transform =
+        `translateZ(${paragraphHeight}px)`;
+    }
+  }
+
+  // remove parallax effect from inner elements
+  function removeElementParrallax(parent: HTMLDivElement) {
+    const titleElement = parent.querySelector(".title");
+    const descriptionElement = parent.querySelector(".description");
+    const demoLinkElement = parent.querySelector(".demo-link");
+
+    if (titleElement) {
+      (titleElement as HTMLElement).style.transform = "";
+    }
+
+    if (demoLinkElement) {
+      (demoLinkElement as HTMLElement).style.transform = "";
+    }
+
+    if (descriptionElement) {
+      (descriptionElement as HTMLElement).style.transform = "";
+    }
+  }
 
   // check for reduced motion status and touch device
   useEffect(() => {
@@ -71,24 +113,14 @@ export function Project({
         translateZ(0)
       `;
 
-      // Add parallax effect to inner elements
-      const elements = card.querySelectorAll("a, p");
-
-      elements.forEach((element, index) => {
-        const zHeight = [titleHeight, paragraphHeight][index] || 0;
-        (element as HTMLElement).style.transform = `translateZ(${zHeight}px)`;
-      });
+      addElementParrallax(card);
     };
 
     const handleMouseLeave = () => {
       card.style.transform =
         "perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0)";
 
-      const elements = card.querySelectorAll("a, p");
-
-      elements.forEach((element) => {
-        (element as HTMLElement).style.transform = "";
-      });
+      removeElementParrallax(card);
     };
 
     card.addEventListener("mousemove", handleMouseMove);
@@ -118,7 +150,7 @@ export function Project({
           />
           <a
             aria-label="demo link"
-            className="demo-link rounded-lg bg-white absolute right-2.5 bottom-2.5 p-1 shadow-md  transform hover:scale-[1.2] transition-transform duration-200 ease-out"
+            className="demo-link  rounded-lg bg-white absolute right-2.5 bottom-2.5 p-1 shadow-md  transform hover:scale-[1.2] transition-transform duration-200 ease-out"
             target="_blank"
             rel="noopener noreferrer"
             href={demo}
@@ -128,14 +160,16 @@ export function Project({
         </picture>
       </div>
       <a
-        className="font-semibold w-full"
+        className="title font-semibold w-full "
         href={link}
         target="_blank"
         rel="noopener noreferrer"
       >
         {title}
       </a>
-      <p className="text-sm font-[Roboto_mono] text-pretty ">{description}</p>
+      <p className="description text-sm font-[Roboto_mono] text-pretty ">
+        {description}
+      </p>
     </div>
   );
 }
