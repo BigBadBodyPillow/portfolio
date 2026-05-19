@@ -1,8 +1,9 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 :root {
-  --main-font: 'Space Grotesk';
-  font-family: var(--main-font), system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --main-font: "Space Grotesk";
+  font-family:
+    var(--main-font), system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 

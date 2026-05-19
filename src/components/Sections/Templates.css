@@ -55,6 +55,10 @@
   transform: scale(1.02);
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
+
+.template:hover .demo-link {
+  box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.3);
+}
 .template:hover .tags {
   transform: scale(1.03);
 }
