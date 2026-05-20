@@ -177,7 +177,18 @@ export function Showcase({
               draggable="false"
             />
           </picture>
-          <a
+          {demo && (
+            <a
+              aria-label={`link to demo of ${title}`}
+              className="demo-link  rounded-lg bg-white hover:bg-(--accent-colour) absolute right-2.5 bottom-2.5 p-1 shadow-md  transform hover:scale-[1.2] transition-transform duration-200 ease-out"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={demo}
+            >
+              <ExternalLink aria-label={`image for link to demo of ${title}`} />
+            </a>
+          )}
+          {/* <a
             aria-label={`link to demo of ${title}`}
             className="demo-link  rounded-lg bg-white hover:bg-(--accent-colour) absolute right-2.5 bottom-2.5 p-1 shadow-md  transform hover:scale-[1.2] transition-transform duration-200 ease-out"
             target="_blank"
@@ -185,7 +196,7 @@ export function Showcase({
             href={demo}
           >
             <ExternalLink aria-label={`image for link to demo of ${title}`} />
-          </a>
+          </a> */}
         </div>
         <div className="title-and-description">
           <a

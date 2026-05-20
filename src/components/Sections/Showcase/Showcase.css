@@ -27,9 +27,9 @@
   z-index: 1;
 }
 
-.demo-link:not([href]) {
+/* .demo-link:not([href]) {
   display: none;
-}
+} */
 
 .showcase img {
   transition: transform 0.1s ease-out;
