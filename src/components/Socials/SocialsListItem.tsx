@@ -12,9 +12,9 @@ export function SocialsListItem({ url, Icon, label }: SocialsListItemProp) {
           href={url}
           target="_blank"
           className="socials-icon"
-          aria-label={label}
+          aria-label={`link to ${label}`}
         >
-          <Icon />
+          <Icon aria-label={`${label} icon`} />
         </a>
       </li>
     </>

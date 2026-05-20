@@ -178,13 +178,13 @@ export function Showcase({
             />
           </picture>
           <a
-            aria-label="demo link"
+            aria-label={`link to demo of ${title}`}
             className="demo-link  rounded-lg bg-white hover:bg-(--accent-colour) absolute right-2.5 bottom-2.5 p-1 shadow-md  transform hover:scale-[1.2] transition-transform duration-200 ease-out"
             target="_blank"
             rel="noopener noreferrer"
             href={demo}
           >
-            <ExternalLink />
+            <ExternalLink aria-label={`image for link to demo of ${title}`} />
           </a>
         </div>
         <div className="title-and-description">
