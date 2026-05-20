@@ -162,41 +162,45 @@ export function Showcase({
   return (
     <div
       ref={cardRef}
-      className="showcase p-2 pb-4 border border-(--border-colour) rounded-lg cursor-grab"
+      className="showcase p-2 pb-4 border border-(--border-colour) rounded-lg cursor-grab flex flex-col justify-between"
       data-reduced-motion={prefersReducedMotion}
     >
-      <div className="image-wrapper relative">
-        <picture>
-          <source srcSet={lightImage} media="(prefers-color-scheme:light)" />
-          <img
-            src={image}
-            alt={`preview of ${title}`}
-            // aspect ratio is my browser without the top bar
-            className="object-cover  w-full aspect-[1.90193164933] bg-(--border-colour) border-2 border-(--border-colour) rounded-sm mb-4 select-none"
-            draggable="false"
-          />
-        </picture>
-        <a
-          aria-label="demo link"
-          className="demo-link  rounded-lg bg-white hover:bg-(--accent-colour) absolute right-2.5 bottom-2.5 p-1 shadow-md  transform hover:scale-[1.2] transition-transform duration-200 ease-out"
-          target="_blank"
-          rel="noopener noreferrer"
-          href={demo}
-        >
-          <ExternalLink />
-        </a>
+      <div className="image-title-and-description">
+        <div className="image-wrapper relative">
+          <picture>
+            <source srcSet={lightImage} media="(prefers-color-scheme:light)" />
+            <img
+              src={image}
+              alt={`preview of ${title}`}
+              // aspect ratio is my browser without the top bar
+              className="object-cover  w-full aspect-[1.90193164933] bg-(--border-colour) border-2 border-(--border-colour) rounded-sm mb-4 select-none"
+              draggable="false"
+            />
+          </picture>
+          <a
+            aria-label="demo link"
+            className="demo-link  rounded-lg bg-white hover:bg-(--accent-colour) absolute right-2.5 bottom-2.5 p-1 shadow-md  transform hover:scale-[1.2] transition-transform duration-200 ease-out"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={demo}
+          >
+            <ExternalLink />
+          </a>
+        </div>
+        <div className="title-and-description">
+          <a
+            className="title font-semibold w-full "
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {title}
+          </a>
+          <p className="description text-sm font-[Roboto_mono] text-pretty ">
+            {description}
+          </p>
+        </div>
       </div>
-      <a
-        className="title font-semibold w-full "
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {title}
-      </a>
-      <p className="description text-sm font-[Roboto_mono] text-pretty ">
-        {description}
-      </p>
 
       {tags && (
         <div className="tags text-xs font-[Roboto_mono] flex gap-2.5 mt-2">

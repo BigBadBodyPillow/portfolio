@@ -4,7 +4,7 @@ This is my personal portfolio website, built with React and TypeScript.
 
 ## TODO
 
-- [ ] refactor projects and templates (they use a lot of duplicate code)
+- [x] refactor projects and templates (they use a lot of duplicate code)
 
 ## Technologies Used
 
@@ -48,7 +48,8 @@ To run this project locally, you will need to have Node.js and npm installed.
 
 ## Links
 
-- [Grid Background](https://ui.aceternity.com/components/grid-and-dot-backgrounds) - [svgs](https://svgbox.net/iconsets/)
+- [Grid Background](https://ui.aceternity.com/components/grid-and-dot-backgrounds)
+- [svgs](https://svgbox.net/iconsets/)
 - [Favicon](https://www.svgrepo.com/)
 - [Other Icons](https://svgl.app/)
 - [svgviewer](https://www.svgviewer.dev/svg-to-react-jsx)
