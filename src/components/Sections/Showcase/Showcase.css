@@ -1,4 +1,4 @@
-.project {
+.showcase {
   transition: transform 0.1s ease-out;
   transform-style: preserve-3d;
   perspective: 1000px;
@@ -14,7 +14,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .project {
+  .showcase {
     /* 255 -15 */
     --stripe1-colour: rgb(240, 240, 240);
     /* 255 - 20 */
@@ -22,12 +22,16 @@
   }
 }
 
-.project:hover {
+.showcase:hover {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
-.project img {
+.demo-link:not([href]) {
+  display: none;
+}
+
+.showcase img {
   transition: transform 0.1s ease-out;
   transform-style: preserve-3d;
   display: grid;
@@ -42,72 +46,91 @@
   background-size: cover;
 }
 
-.project:hover img {
+.showcase:hover img {
   transform: scale(1.02);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-.project:hover a,
-.project:hover p {
+.showcase:hover a,
+.showcase:hover p,
+.showcase:hover {
   transform: scale(1.02);
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.project:hover .demo-link {
+.showcase:hover .demo-link {
   box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.3);
 }
-.project a {
+/* .showcase:hover .tags {
+  transform: scale(1.03);
+} */
+.showcase a {
   display: inline-block;
 }
-.project p {
+.showcase p {
   color: var(--text-colour-main);
 }
 
-.project a:hover {
+.showcase a:hover {
   color: var(--accent-colour);
 }
 
-.demo-link:not([href]) {
-  display: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .dots {
-    display: inline-block;
-    animation: wave 2s ease-in-out infinite;
-  }
-  .dots:nth-child(1) {
-    animation-delay: 0;
-  }
-  .dots:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-  .dots:nth-child(3) {
-    animation-delay: 0.4s;
-  }
-}
-
-@keyframes wave {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(-8px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .project:hover {
+  .showcase:hover {
     box-shadow: none;
   }
-  .project:hover img,
-  .project:hover a,
-  .project:hover p {
+  .showcase:hover img,
+  .showcase:hover a,
+  .showcase:hover p,
+  .showcase:hover .tag {
     box-shadow: none;
     transform: none;
     text-shadow: none;
+  }
+}
+
+.tag {
+  --tag-colour: var(--text-colour);
+  --tag-background: rgb(from var(--tag-colour) r g b / 0.2);
+  color: var(--tag-colour);
+  background-color: var(--tag-background);
+
+  border: 1px solid;
+  text-align: center;
+  line-height: 12px;
+}
+.template:hover .tag {
+  box-shadow: 0 10px 20px var(--tag-background);
+}
+.JavaScript {
+  --tag-colour: #f7df1d;
+}
+.HTML {
+  --tag-colour: #e34c26;
+}
+.CSS {
+  --tag-colour: rebeccapurple;
+}
+.Tailwind {
+  --tag-colour: #00bcff;
+}
+.Vue {
+  --tag-colour: #15ca82;
+}
+.React {
+  --tag-colour: #58c4dc;
+}
+.Svelt {
+  --tag-colour: #ff3a00;
+}
+.Angular {
+  --tag-colour: #ea1738;
+}
+
+/* for low contrast issues */
+@media (prefers-color-scheme: light) {
+  .JavaScript,
+  .Vue,
+  .React {
+    --tag-background: #ffffff;
   }
 }

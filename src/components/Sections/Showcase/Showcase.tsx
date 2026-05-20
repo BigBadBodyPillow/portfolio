@@ -1,25 +1,41 @@
 import { useRef, useEffect, useState } from "react";
 
 // svg
-import ExternalLink from "../../assets/ExternalLink.svg?react";
+import ExternalLink from "../../../assets/ExternalLink.svg?react";
 
-interface ProjectProps {
+import "./Showcase.css";
+
+type tag =
+  | "JavaScript"
+  | "HTML"
+  | "CSS"
+  | "Tailwind"
+  | "Vue"
+  | "React"
+  | "Svelt"
+  | "Angular";
+
+type tags = tag[];
+
+interface Props {
   image: string;
   lightImage?: string;
   title: string;
   link: string;
   demo?: string;
   description: string;
+  tags?: tags;
 }
 
-export function Project({
+export function Showcase({
   image,
   lightImage,
   title,
   link,
   demo,
   description,
-}: ProjectProps) {
+  tags,
+}: Props) {
   const cardRef = useRef<HTMLDivElement>(null);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const [isTouchDevice, setIsTouchDevice] = useState(false);
@@ -28,12 +44,14 @@ export function Project({
   const titleHeight = 20;
   const externalLinkHeight = 0; /* fix not working? */
   const paragraphHeight = 15;
+  const tagsHeight = 20;
 
   // Add parallax effect to inner elements
   function addElementParrallax(parent: HTMLDivElement) {
     const titleElement = parent.querySelector(".title");
     const descriptionElement = parent.querySelector(".description");
     const demoLinkElement = parent.querySelector(".demo-link");
+    const tagsElement = parent.querySelector(".tags");
 
     if (titleElement) {
       (titleElement as HTMLElement).style.transform =
@@ -49,6 +67,10 @@ export function Project({
       (descriptionElement as HTMLElement).style.transform =
         `translateZ(${paragraphHeight}px)`;
     }
+    if (tagsElement) {
+      (tagsElement as HTMLElement).style.transform =
+        `translateZ(${tagsHeight}px)`;
+    }
   }
 
   // remove parallax effect from inner elements
@@ -56,6 +78,7 @@ export function Project({
     const titleElement = parent.querySelector(".title");
     const descriptionElement = parent.querySelector(".description");
     const demoLinkElement = parent.querySelector(".demo-link");
+    const tagsElement = parent.querySelector(".tags");
 
     if (titleElement) {
       (titleElement as HTMLElement).style.transform = "";
@@ -67,6 +90,10 @@ export function Project({
 
     if (descriptionElement) {
       (descriptionElement as HTMLElement).style.transform = "";
+    }
+
+    if (tagsElement) {
+      (tagsElement as HTMLElement).style.transform = "";
     }
   }
 
@@ -135,7 +162,7 @@ export function Project({
   return (
     <div
       ref={cardRef}
-      className="project p-2 pb-4 border border-(--border-colour) rounded-lg cursor-grab"
+      className="showcase p-2 pb-4 border border-(--border-colour) rounded-lg cursor-grab"
       data-reduced-motion={prefersReducedMotion}
     >
       <div className="image-wrapper relative">
@@ -143,21 +170,21 @@ export function Project({
           <source srcSet={lightImage} media="(prefers-color-scheme:light)" />
           <img
             src={image}
-            alt={`${title}`}
-            // 960/493 is the lowest denomination of 1920/986 which is the image dimesnions
-            className="object-cover bg-cover w-full aspect-960/493 bg-(--border-colour) border-2 border-(--border-colour) rounded-sm mb-4 select-none"
+            alt={`preview of ${title}`}
+            // aspect ratio is my browser without the top bar
+            className="object-cover  w-full aspect-[1.90193164933] bg-(--border-colour) border-2 border-(--border-colour) rounded-sm mb-4 select-none"
             draggable="false"
           />
-          <a
-            aria-label="demo link"
-            className="demo-link  rounded-lg bg-white hover:bg-(--accent-colour) absolute right-2.5 bottom-2.5 p-1 shadow-md  transform hover:scale-[1.2] transition-transform duration-200 ease-out"
-            target="_blank"
-            rel="noopener noreferrer"
-            href={demo}
-          >
-            <ExternalLink />
-          </a>
         </picture>
+        <a
+          aria-label="demo link"
+          className="demo-link  rounded-lg bg-white hover:bg-(--accent-colour) absolute right-2.5 bottom-2.5 p-1 shadow-md  transform hover:scale-[1.2] transition-transform duration-200 ease-out"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={demo}
+        >
+          <ExternalLink />
+        </a>
       </div>
       <a
         className="title font-semibold w-full "
@@ -170,6 +197,16 @@ export function Project({
       <p className="description text-sm font-[Roboto_mono] text-pretty ">
         {description}
       </p>
+
+      {tags && (
+        <div className="tags text-xs font-[Roboto_mono] flex gap-2.5 mt-2">
+          {tags.map((tag) => (
+            <div key={tag} className={`tag ${tag} px-3 py-1 rounded-full `}>
+              {tag}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
