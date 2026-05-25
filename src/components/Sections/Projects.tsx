@@ -1,9 +1,11 @@
 //components
 import { Showcase } from "./Showcase/Showcase.tsx";
+// import More from "../More.tsx";
 
 // images
 // import Portfolio from "/project-images/Portfolio.webp";
 // import PortfolioLight from "/project-images/PortfolioLight.webp";
+// import Utility from "/project-images/Utility.webp";
 import iTunesMediaCatalogue from "/project-images/iTunesMediaCatalogue.webp";
 import MaintenanceManager from "/project-images/MaintenanceManager.webp";
 import ToDo from "/project-images/ToDo.webp";
@@ -12,7 +14,6 @@ import Sudoku from "/project-images/Sudoku.webp";
 import SudokuLight from "/project-images/SudokuLight.webp";
 import Notes from "/project-images/Notes.webp";
 import NotesLight from "/project-images/NotesLight.webp";
-// import Utility from "/project-images/Utility.webp";
 
 export function Projects() {
   return (
@@ -84,14 +85,7 @@ export function Projects() {
             description="A personal utility app that combines many of my personal commonly used tools into one. Specifically the purpose is just because it gets kinda annoying opening google sheets / a calculaotor and then other websites"
           ></Project> */}
           {/* more */}
-          <div className="border border-(--border-colour) rounded-lg flex justify-center items-center  bg-[rgb(235,235,235)] dark:bg-[rgb(20,20,20)] select-none cursor-not-allowed h-50 ">
-            <h3 className="dark:text-[rgb(91,91,91)] text-[#858585] ">
-              more
-              <span className="dots">.</span>
-              <span className="dots">.</span>
-              <span className="dots">.</span>
-            </h3>
-          </div>
+          {/* <More /> */}
         </div>
       </div>
     </>

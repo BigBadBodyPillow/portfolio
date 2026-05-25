@@ -1,5 +1,6 @@
 //components
 import { Showcase } from "./Showcase/Showcase.tsx";
+// import More from "../More.tsx";
 
 //public images
 import eCommerce1 from "/template-images/eCommerce1.webp";
@@ -52,14 +53,7 @@ export function Templates() {
             tags={["HTML", "CSS", "JavaScript"]}
           ></Template> */}
           {/* more */}
-          <div className="border border-(--border-colour) rounded-lg flex justify-center items-center  bg-[rgb(235,235,235)] dark:bg-[rgb(20,20,20)] min-h-60 select-none cursor-not-allowed ">
-            <h3 className="dark:text-[rgb(91,91,91)] text-[#858585] ">
-              more
-              <span className="dots">.</span>
-              <span className="dots">.</span>
-              <span className="dots">.</span>
-            </h3>
-          </div>
+          {/* <More /> */}
         </div>
       </div>
     </>
