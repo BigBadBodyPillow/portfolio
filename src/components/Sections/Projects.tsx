@@ -5,7 +5,6 @@ import { Showcase } from "./Showcase/Showcase.tsx";
 // images
 // import Portfolio from "/project-images/Portfolio.webp";
 // import PortfolioLight from "/project-images/PortfolioLight.webp";
-// import Utility from "/project-images/Utility.webp";
 import iTunesMediaCatalogue from "/project-images/iTunesMediaCatalogue.webp";
 import MaintenanceManager from "/project-images/MaintenanceManager.webp";
 import ToDo from "/project-images/ToDo.webp";
@@ -14,6 +13,7 @@ import Sudoku from "/project-images/Sudoku.webp";
 import SudokuLight from "/project-images/SudokuLight.webp";
 import Notes from "/project-images/Notes.webp";
 import NotesLight from "/project-images/NotesLight.webp";
+import Drawing from "/project-images/Drawing.webp";
 
 export function Projects() {
   return (
@@ -76,15 +76,13 @@ export function Projects() {
             link="https://github.com/BigBadBodyPillow/event-manager"
             description="A web application designed to help users manage and track events. Its features include user authentication, event management, and a calendar view. It is built with React, Tailwind, Express, and MongoDB."
           />
-          {/* utility */}
-          {/* <Project
-            image={Utility}
-            lightImage=""
-            title="Utility(Work in Progress)"
-            link="https://github.com/BigBadBodyPillow/utility"
-            description="A personal utility app that combines many of my personal commonly used tools into one. Specifically the purpose is just because it gets kinda annoying opening google sheets / a calculaotor and then other websites"
-          ></Project> */}
-          {/* more */}
+          <Showcase
+            image={Drawing}
+            title="Drawings"
+            link="https://github.com/BigBadBodyPillow/Drawing"
+            demo="https://bigbadbodypillow.github.io/Drawing/"
+            description='"drawings" that ive made with HTML/CSS only by manually creating the clip paths... for fun.'
+          />
           {/* <More /> */}
         </div>
       </div>
