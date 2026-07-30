@@ -9,6 +9,7 @@ import eCommerce1 from "/template-images/eCommerce1.webp";
 import Template2 from "/template-images/Template2.webp";
 import Template2Light from "/template-images/Template2Light.webp";
 import Aetherfield from "/template-images/Aetherfield.webp";
+import Application from "/template-images/Application.webp";
 
 export function Templates() {
   return (
@@ -42,6 +43,14 @@ export function Templates() {
             demo="https://bigbadbodypillow.github.io/eCommerce-Template-1/"
             description="Simple eCommerce template."
             tags={["Vue", "CSS"]}
+          />
+          <Showcase
+            image={Application}
+            title="Application Showcase Landing Page"
+            link="https://github.com/BigBadBodyPillow/app-landing-page"
+            demo="https://bigbadbodypillow.github.io/app-landing-page/"
+            description="Simple eCommerce template."
+            tags={["Svelte", "CSS"]}
           />
           {/* <Template
             image={Buttons}

@@ -12,7 +12,7 @@ type tag =
   | "Tailwind"
   | "Vue"
   | "React"
-  | "Svelt"
+  | "Svelte"
   | "Angular";
 
 type tags = tag[];
