@@ -42,6 +42,7 @@ function App() {
         <Projects />
         <Templates />
         <Misc />
+
         <Skills />
       </main>
       <EmailFooter />

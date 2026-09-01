@@ -36,7 +36,7 @@
   transform-style: preserve-3d;
   display: grid;
   place-items: center;
-  color: var(--text-colour);
+  color: transparent;
   font-size: 2rem;
   background-color: #454448;
   background-image: url("/Topography.svg");
@@ -133,4 +133,18 @@
   .React {
     --tag-background: #ffffff;
   }
+}
+
+.fallback {
+  background: var(--rainbow);
+  background-size: 400%;
+  animation: rainbow-animation 100s infinite;
+  position: relative;
+}
+.fallback::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/Topography.svg");
+  background-size: 60%;
 }

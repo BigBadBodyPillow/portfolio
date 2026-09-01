@@ -158,16 +158,23 @@ export function Showcase({
     >
       <div className="image-title-and-description">
         <div className="image-wrapper relative">
-          <picture>
-            <source srcSet={lightImage} media="(prefers-color-scheme:light)" />
-            <img
-              src={image}
-              alt={`preview of ${title}`}
-              // aspect ratio is my browser without the top bar
-              className="object-cover  w-full aspect-[1.90193164933] bg-(--border-colour) border-2 border-(--border-colour) rounded-sm mb-4 select-none"
-              draggable="false"
-            />
-          </picture>
+          {image ? (
+            <picture>
+              <source
+                srcSet={lightImage}
+                media="(prefers-color-scheme:light)"
+              />
+              <img
+                src={image}
+                alt={`preview of ${title}`}
+                // aspect ratio is my browser without the top bar
+                className="object-cover  w-full aspect-[1.90193164933] bg-(--border-colour) border-2 border-(--border-colour) rounded-sm mb-4 select-none"
+                draggable="false"
+              />
+            </picture>
+          ) : (
+            <div className="fallback  w-full min-h-13.5  bg-(--border-colour) border-2 border-(--border-colour) rounded-sm mb-4 select-none"></div>
+          )}
           {demo && (
             <a
               aria-label={`link to demo of ${title}`}
