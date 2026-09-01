@@ -10,6 +10,7 @@ import { Projects } from "./components/Sections/Projects.tsx";
 import { Templates } from "./components/Sections/Templates.tsx";
 import { Skills } from "./components/Sections/Skills.tsx";
 import { EmailFooter } from "./components/EmailFooter/EmailFooter.tsx";
+import { Misc } from "./components/Sections/Misc.tsx";
 
 // stuff todo later
 // testing
@@ -40,6 +41,7 @@ function App() {
         {/* <About /> */}
         <Projects />
         <Templates />
+        <Misc />
         <Skills />
       </main>
       <EmailFooter />

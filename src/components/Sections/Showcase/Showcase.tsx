@@ -3,22 +3,13 @@ import { useRef, useEffect, useState } from "react";
 // svg
 import ExternalLink from "../../../assets/ExternalLink.svg?react";
 
+// types
+import type { tags } from "../../../types";
+
 import "./Showcase.css";
 
-type tag =
-  | "JavaScript"
-  | "HTML"
-  | "CSS"
-  | "Tailwind"
-  | "Vue"
-  | "React"
-  | "Svelte"
-  | "Angular";
-
-type tags = tag[];
-
 interface Props {
-  image: string;
+  image?: string;
   lightImage?: string;
   title: string;
   link: string;
