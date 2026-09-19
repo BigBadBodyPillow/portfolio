@@ -13,6 +13,7 @@ import Sudoku from "/project-images/Sudoku.webp";
 import SudokuLight from "/project-images/SudokuLight.webp";
 import Notes from "/project-images/Notes.webp";
 import NotesLight from "/project-images/NotesLight.webp";
+import Paint from "/project-images/Paint.webp";
 
 const showcases = [
   {
@@ -69,6 +70,14 @@ const showcases = [
     demo: undefined,
     description:
       "A web application designed to help users manage and track events. Its features include user authentication, event management, and a calendar view. It is built with React, Tailwind, Express, and MongoDB.",
+  },
+  {
+    image: Paint,
+    lightImage: undefined,
+    title: "Paint",
+    link: "https://github.com/BigBadBodyPillow/Paint",
+    demo: "https://bigbadbodypillow.github.io/Paint/",
+    description: "A Paint app that built with svelte ",
   },
 ];
 export function Projects() {

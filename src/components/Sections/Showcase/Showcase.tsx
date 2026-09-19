@@ -33,7 +33,7 @@ export function Showcase({
 
   // distance on z axis for elements
   const titleHeight = 20;
-  const externalLinkHeight = 0; /* fix not working? */
+  // const externalLinkHeight = 0; /* fix not working? */
   const paragraphHeight = 15;
   const tagsHeight = 20;
 
@@ -41,7 +41,7 @@ export function Showcase({
   function addElementParrallax(parent: HTMLDivElement) {
     const titleElement = parent.querySelector(".title");
     const descriptionElement = parent.querySelector(".description");
-    const demoLinkElement = parent.querySelector(".demo-link");
+    // const demoLinkElement = parent.querySelector(".demo-link");
     const tagsElement = parent.querySelector(".tags");
 
     if (titleElement) {
@@ -49,10 +49,10 @@ export function Showcase({
         `translateZ(${titleHeight}px)`;
     }
 
-    if (demoLinkElement) {
-      (demoLinkElement as HTMLElement).style.transform =
-        `translateZ(${externalLinkHeight}px)`;
-    }
+    // if (demoLinkElement) {
+    //   (demoLinkElement as HTMLElement).style.transform =
+    //     `translateZ(${externalLinkHeight}px)`;
+    // }
 
     if (descriptionElement) {
       (descriptionElement as HTMLElement).style.transform =
@@ -68,16 +68,16 @@ export function Showcase({
   function removeElementParrallax(parent: HTMLDivElement) {
     const titleElement = parent.querySelector(".title");
     const descriptionElement = parent.querySelector(".description");
-    const demoLinkElement = parent.querySelector(".demo-link");
+    // const demoLinkElement = parent.querySelector(".demo-link");
     const tagsElement = parent.querySelector(".tags");
 
     if (titleElement) {
       (titleElement as HTMLElement).style.transform = "";
     }
 
-    if (demoLinkElement) {
-      (demoLinkElement as HTMLElement).style.transform = "";
-    }
+    // if (demoLinkElement) {
+    //   (demoLinkElement as HTMLElement).style.transform = "";
+    // }
 
     if (descriptionElement) {
       (descriptionElement as HTMLElement).style.transform = "";

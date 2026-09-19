@@ -31,6 +31,17 @@
   display: none;
 } */
 
+.showcase .image-wrapper {
+  transform-style: preserve-3d;
+}
+
+.showcase .demo-link {
+  position: absolute;
+  z-index: 2;
+  transform: translateZ(30px);
+  backface-visibility: visible;
+}
+
 .showcase img {
   transition: transform 0.1s ease-out;
   transform-style: preserve-3d;
@@ -58,6 +69,7 @@
 }
 
 .showcase:hover .demo-link {
+  transform: translateZ(30px) scale(1.02);
   box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.3);
 }
 /* .showcase:hover .tags {
