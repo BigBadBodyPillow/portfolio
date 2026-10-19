@@ -6,7 +6,8 @@ import { Showcase } from "./Showcase/Showcase.tsx";
 // import Portfolio from "/project-images/Portfolio.webp";
 // import PortfolioLight from "/project-images/PortfolioLight.webp";
 import iTunesMediaCatalogue from "/project-images/iTunesMediaCatalogue.webp";
-import MaintenanceManager from "/project-images/MaintenanceManager.webp";
+// import MaintenanceManager from "/project-images/MaintenanceManager.webp";
+import svgBuilder from "/project-images/svgBuilder.webp";
 import ToDo from "/project-images/ToDo.webp";
 import EventManager from "/project-images/EventManager.webp";
 import Sudoku from "/project-images/Sudoku.webp";
@@ -44,14 +45,23 @@ const showcases = [
     description:
       "Built to utilise the itunes API, this project allows users to search for media and view details about it. It is  built with React, Tailwind, Express.",
   },
+  // {
+  //   image: MaintenanceManager,
+  //   lightImage: undefined,
+  //   title: "Maintenance Manager",
+  //   link: "https://github.com/BigBadBodyPillow/maintenance-manager",
+  //   demo: undefined,
+  //   description:
+  //     "A web application designed to help users manage and track maintenance tasks. Its features include user authentication and task management. It is built with React, Tailwind, Express, and MongoDB.",
+  // },
   {
-    image: MaintenanceManager,
+    image: svgBuilder,
     lightImage: undefined,
-    title: "Maintenance Manager",
-    link: "https://github.com/BigBadBodyPillow/maintenance-manager",
-    demo: undefined,
+    title: "Svg Maker",
+    link: "https://github.com/BigBadBodyPillow/svgBuilder",
+    demo: "https://bigbadbodypillow.github.io/svgBuilder/",
     description:
-      "A web application designed to help users manage and track maintenance tasks. Its features include user authentication and task management. It is built with React, Tailwind, Express, and MongoDB.",
+      "A tool to help visualise the path while making an svg. This was made for personal use. Features include Canvas and Viewbox size, stroke width and colour, and fill mode and colour adjustment",
   },
   {
     image: ToDo,
